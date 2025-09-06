@@ -3,12 +3,17 @@ import { notFound } from "next/navigation";
 import { locales } from "./config";
 
 export default getRequestConfig(async ({ requestLocale }) => {
+  // Wait for the requestLocale promise to resolve
   const locale = await requestLocale;
 
-  if (!locales.includes(locale as any)) notFound();
+  // If locale is undefined or not in allowed locales, throw 404
+  if (!locale || !locales.includes(locale as any)) {
+    notFound();
+  }
 
   return {
     messages: (await import(`../locales/${locale}.json`)).default,
-    locale,
+    // At this point, locale is guaranteed to be a string
+    locale: locale,
   };
 });
