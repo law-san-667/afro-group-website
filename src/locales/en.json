@@ -1,0 +1,80 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "AFRO Group",
+    "subtitle": "Your trusted partner for financial innovation in Africa",
+    "description": "We develop advanced technological solutions to democratize access to financial and educational services across the African continent.",
+    "cta": "Discover our solutions",
+    "learnMore": "Learn more"
+  },
+  "company": {
+    "title": "Our Mission",
+    "description": "AFRO Group is a technology company dedicated to financial and educational innovation in Africa. We create solutions that transform how Africans access financial services and education.",
+    "vision": "Our Vision",
+    "visionText": "To become the leader in technological innovation in Africa, creating an inclusive and accessible financial and educational ecosystem for all."
+  },
+  "fined": {
+    "title": "FinEd - Digital Financial Education",
+    "subtitle": "Our flagship solution",
+    "description": "FinEd is a revolutionary platform that combines financial education and digital banking services. It allows users to learn while managing their finances intelligently.",
+    "features": {
+      "education": "Interactive financial education modules",
+      "wallet": "Digital wallet manager for better financial tracking",
+      "tools": "Financial tools within everyone's reach",
+      "community": "Collaborative learning community"
+    },
+    "cta": "Discover FinEd"
+  },
+  "beta": {
+    "title": "BETA Consulting",
+    "seeMore": "Learn more about BETA Consulting",
+    "subtitle": "Digital transformation consulting",
+    "description": "Our consulting division supports companies and institutions in their digital transformation, with particular expertise in the financial and educational sectors.",
+    "services": {
+      "strategy": "Digital strategy",
+      "implementation": "Technology implementation",
+      "training": "Training and support",
+      "support": "Continuous technical support"
+    },
+    "cta": "Our consulting services"
+  },
+  "impact": {
+    "title": "Our Impact",
+    "users": "Active users",
+    "countries": "Countries covered",
+    "partners": "Partners",
+    "transactions": "Transactions processed"
+  },
+  "blog": {
+    "title": "News & Insights",
+    "subtitle": "Stay informed about the latest trends",
+    "readMore": "Read more",
+    "viewAll": "View all articles"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your financial approach?",
+    "name": "Full name",
+    "email": "Email address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "description": "AFRO Group - Technological innovation for tomorrow's Africa",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved"
+  }
+}

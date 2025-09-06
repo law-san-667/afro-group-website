@@ -1,0 +1,80 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "AFRO Group",
+    "subtitle": "Votre partenaire de confiance pour l'innovation financière en Afrique",
+    "description": "Nous développons des solutions technologiques avancées pour démocratiser l'accès aux services financiers et éducatifs à travers le continent africain.",
+    "cta": "Découvrir nos solutions",
+    "learnMore": "En savoir plus"
+  },
+  "company": {
+    "title": "Notre Mission",
+    "description": "AFRO Group est une entreprise technologique dédiée à l'innovation financière et éducative en Afrique. Nous créons des solutions qui transforment la façon dont les Africains accèdent aux services financiers et à l'éducation.",
+    "vision": "Notre Vision",
+    "visionText": "Devenir le leader de l'innovation technologique en Afrique, en créant un écosystème financier et éducatif inclusif et accessible à tous."
+  },
+  "fined": {
+    "title": "FinEd - Éducation Financière Digitale",
+    "subtitle": "Notre solution phare",
+    "description": "FinEd est une plateforme révolutionnaire qui combine l'éducation financière et les services bancaires digitaux. Elle permet aux utilisateurs d'apprendre tout en gérant leurs finances de manière intelligente.",
+    "features": {
+      "education": "Modules d'éducation financière interactifs",
+      "wallet": "Gestionnaire de portefeuille numérique",
+      "tools": "Outils financiers à la portée de tous",
+      "community": "Communauté d'apprentissage dynamique"
+    },
+    "cta": "Découvrir FinEd"
+  },
+  "beta": {
+    "title": "BETA Consulting",
+    "seeMore": "En savoir plus sur BETA Consulting",
+    "subtitle": "Conseil en transformation digitale",
+    "description": "Notre division conseil accompagne les entreprises et institutions dans leur transformation digitale, avec une expertise particulière dans les secteurs financier et éducatif.",
+    "services": {
+      "strategy": "Stratégie digitale",
+      "implementation": "Mise en œuvre technologique",
+      "training": "Formation et accompagnement",
+      "support": "Support technique continu"
+    },
+    "cta": "Nos services conseil"
+  },
+  "impact": {
+    "title": "Notre Impact",
+    "users": "Utilisateurs actifs",
+    "countries": "Pays couverts",
+    "partners": "Partenaires",
+    "transactions": "Transactions traitées"
+  },
+  "blog": {
+    "title": "Actualités & Insights",
+    "subtitle": "Restez informé des dernières tendances",
+    "readMore": "Lire la suite",
+    "viewAll": "Voir tous les articles"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Prêt à transformer votre approche financière ?",
+    "name": "Nom complet",
+    "email": "Adresse email",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer."
+  },
+  "footer": {
+    "description": "AFRO Group - Innovation technologique pour l'Afrique de demain",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "contact": "Contact",
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits réservés"
+  }
+}
