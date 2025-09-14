@@ -5,17 +5,29 @@ import { Input } from "@/src/components/ui/input"
 import { Link } from "@/src/i18n/navigation"
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
 
 export function Footer() {
   const t = useTranslations("footer")
   const locale = useLocale()
+  const pathname = usePathname()
+
+  const isHomePage = pathname === "/" || pathname === "/en" || pathname === "/fr"
+
+  const handleSmoothScroll = (sectionId: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }
 
   const quickLinks = [
-    { key: "home", href: "/" },
-    { key: "about", href: "/about" },
-    { key: "services", href: "/services" },
-    { key: "blog", href: "/blog" },
-    { key: "contact", href: "/contact" },
+    { key: "home", href: "/", sectionId: "home" },
+    { key: "about", href: "/about", sectionId: null },
+    { key: "services", href: "/services", sectionId: "services" },
+    { key: "contact", href: "/contact", sectionId: "contact" },
   ]
 
   const socialLinks = [
@@ -45,11 +57,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">+221 33 XXX XX XX</span>
+                <span className="text-primary-foreground/80">+221 77 403 82 37</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">Dakar, Sénégal</span>
+                <span className="text-primary-foreground/80">Dakar, Nord Foire BCEAO 2 RA06</span>
               </div>
             </div>
           </div>
@@ -60,12 +72,21 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.key}>
-                  <Link
-                    href={`/${locale}${link.href}`}
-                    className="text-primary-foreground/80 hover:text-accent transition-colors"
-                  >
-                    {t(link.key)}
-                  </Link>
+                  {isHomePage && link.sectionId ? (
+                    <button
+                      onClick={() => handleSmoothScroll(link.sectionId)}
+                      className="text-primary-foreground/80 hover:text-accent transition-colors text-left"
+                    >
+                      {t(link.key)}
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/${locale}${link.href}`}
+                      className="text-primary-foreground/80 hover:text-accent transition-colors"
+                    >
+                      {t(link.key)}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

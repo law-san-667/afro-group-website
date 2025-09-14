@@ -17,11 +17,19 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
-      <FinEdSection />
-      <BetaConsultingSection />
-      <BlogTeaserSection posts={recentPosts} />
-      <ContactSection />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <section id="services">
+        <FinEdSection />
+        <BetaConsultingSection />
+      </section>
+      {/* <section id="blog">
+        <BlogTeaserSection posts={recentPosts} />
+      </section> */}
+      <section id="contact">
+        <ContactSection />
+      </section>
       <Footer />
     </div>
   )

@@ -3,32 +3,32 @@
 import { Badge } from "@/src/components/ui/badge"
 import { Button } from "@/src/components/ui/button"
 import { Card, CardContent } from "@/src/components/ui/card"
-import { ArrowRight, PencilRuler, Wallet, GraduationCap, Users } from "lucide-react"
+import { ArrowRight, Bot, GraduationCap, PencilRuler, Users } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 export function FinEdSection() {
   const t = useTranslations("fined")
 
   const features = [
-    {
-      icon: GraduationCap,
-      titleKey: "education",
-      description: "Modules d'apprentissage interactifs avec gamification et suivi de progression personnalisé",
-    },
-    {
-      icon: Wallet,
-      titleKey: "wallet",
-      description: "Gestionnaire de portefeuille numérique pour un meilleur suivi sur vos finances",
-    },
+    // {
+    //   icon: GraduationCap,
+    //   titleKey: "education",
+    //   description: "Des modules interactifs et ludiques, conçus pour booster ton apprentissage et suivre tes avancées",
+    // },
     {
       icon: PencilRuler,
       titleKey: "tools",
-      description: "Des outils pour aller plus loin dans votre éducation financière tels qu'un simulateur d'investissement",
+      description: "Découvrez des outils puissants, simples et accessibles : simulateur d'investissement, suivi budgétaire et bien plus, pour booster vos compétences financières.",
     },
     {
       icon: Users,
       titleKey: "community",
-      description: "Communauté d'apprentissage encadrée par des experts financiers",
+      description: "Rejoignez une communauté interactive animée par des experts financiers, où apprendre et progresser devient une expérience collective.",
+    },
+    {
+      icon: Bot,
+      titleKey: "ai",
+      description: "Votre coach financier personnel, propulsé par l'IA, pour vous guider, répondre à vos questions et vous aider à prendre les meilleures décisions au quotidien.",
     },
   ]
 
@@ -47,7 +47,8 @@ export function FinEdSection() {
           <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
             {t("subtitle")}
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">{t("title")}</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance">{t("title")}</h2>
+          <p className="text-xl sm:text-2xl font-semibold text-muted-foreground mb-4">{t("tagline")}</p>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
             {t("description")}
           </p>
@@ -71,7 +72,9 @@ export function FinEdSection() {
                         </div>
                         <div>
                           <h3 className="font-semibold text-foreground mb-2">{t(`features.${feature.titleKey}`)}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {feature.description}
+                          </p>
                         </div>
                       </div>
                     </CardContent>

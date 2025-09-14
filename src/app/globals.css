@@ -210,4 +210,13 @@
   button {
     cursor: pointer;
   }
+  /* Add this to your global CSS file (e.g., globals.css) */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Optional: Add offset for fixed navigation */
+  section {
+    scroll-margin-top: 80px; /* Adjust based on your navigation height */
+  }
 }

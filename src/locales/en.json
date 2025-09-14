@@ -20,14 +20,16 @@
     "visionText": "To become the leader in technological innovation in Africa, creating an inclusive and accessible financial and educational ecosystem for all."
   },
   "fined": {
-    "title": "FinEd - Digital Financial Education",
-    "subtitle": "Our flagship solution",
-    "description": "FinEd is a revolutionary platform that combines financial education and digital banking services. It allows users to learn while managing their finances intelligently.",
+    "title": "FinEd",
+    "subtitle": "Digital Financial Education",
+    "tagline": "Future careers in finance",
+    "description": "FinEd is much more than an app: an intelligent platform that teaches you to master your money while giving you digital tools to manage your daily finances.",
     "features": {
       "education": "Interactive financial education modules",
-      "wallet": "Digital wallet manager for better financial tracking",
-      "tools": "Financial tools within everyone's reach",
-      "community": "Collaborative learning community"
+      "wallet": "Digital wallet manager",
+      "tools": "Accessible financial tools",
+      "community": "Dynamic learning community",
+      "ai": "AI Virtual Assistant"
     },
     "cta": "Discover FinEd"
   },
@@ -59,7 +61,7 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Ready to transform your financial approach?",
+    "subtitle": "Are you a business or institution looking to collaborate, contribute, or benefit from our innovative solutions? Contact us today and let's build impactful projects for Africa together.",
     "name": "Full name",
     "email": "Email address",
     "subject": "Subject",
@@ -70,9 +72,11 @@
     "error": "Error sending message. Please try again."
   },
   "footer": {
-    "description": "AFRO Group - Technological innovation for tomorrow's Africa",
+    "description": "AFRO Group - Shaping Africa's future through finance, technology, and education.",
     "quickLinks": "Quick links",
     "services": "Services",
+    "about": "About",
+    "home": "Home",
     "contact": "Contact",
     "followUs": "Follow us",
     "rights": "All rights reserved"

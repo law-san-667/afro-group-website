@@ -51,11 +51,11 @@ export function ContactSection() {
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "your_public_key"
 
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         subject: formData.subject,
+        time: new Date().toLocaleString(),
         message: formData.message,
-        to_email: "contact@afrogroup-sn.com",
       }
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey)
@@ -78,13 +78,13 @@ export function ContactSection() {
     {
       icon: Phone,
       label: "Téléphone",
-      value: "+221 33 XXX XX XX",
-      href: "tel:+22133XXXXXX",
+      value: "+221 77 403 82 37",
+      href: "tel:+221774038237",
     },
     {
       icon: MapPin,
       label: "Adresse",
-      value: "Dakar, Sénégal",
+      value: "Dakar, Nord Foire BCEAO 2 RA06",
       href: "#",
     },
   ]
@@ -105,105 +105,107 @@ export function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Form */}
-          <Card className="border-border/50 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl text-foreground">Envoyez-nous un message</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
+          <div className="h-fit">
+            <Card className="border-border/50 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Envoyez-Nous un message</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">{t("name")}</Label>
+                      <Input
+                        id="name"
+                        name="name"
+                        type="text"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        disabled={status.type === "loading"}
+                        className="focus:ring-primary focus:border-primary border border-gray-300"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email">{t("email")}</Label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                        disabled={status.type === "loading"}
+                        className="focus:ring-primary focus:border-primary border border-gray-300"
+                      />
+                    </div>
+                  </div>
+
                   <div className="space-y-2">
-                    <Label htmlFor="name">{t("name")}</Label>
+                    <Label htmlFor="subject">{t("subject")}</Label>
                     <Input
-                      id="name"
-                      name="name"
+                      id="subject"
+                      name="subject"
                       type="text"
-                      value={formData.name}
+                      value={formData.subject}
                       onChange={handleInputChange}
                       required
                       disabled={status.type === "loading"}
-                      className="focus:ring-primary focus:border-primary"
+                      className="focus:ring-primary focus:border-primary border border-gray-300"
                     />
                   </div>
+
                   <div className="space-y-2">
-                    <Label htmlFor="email">{t("email")}</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
+                    <Label htmlFor="message">{t("message")}</Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      value={formData.message}
                       onChange={handleInputChange}
                       required
                       disabled={status.type === "loading"}
-                      className="focus:ring-primary focus:border-primary"
+                      className="focus:ring-primary focus:border-primary resize-none border border-gray-300"
                     />
                   </div>
-                </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="subject">{t("subject")}</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    disabled={status.type === "loading"}
-                    className="focus:ring-primary focus:border-primary"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">{t("message")}</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    disabled={status.type === "loading"}
-                    className="focus:ring-primary focus:border-primary resize-none"
-                  />
-                </div>
-
-                {/* Status Messages */}
-                {status.type === "success" && (
-                  <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-3 rounded-lg">
-                    <CheckCircle className="h-5 w-5" />
-                    <span className="text-sm font-medium">{status.message}</span>
-                  </div>
-                )}
-
-                {status.type === "error" && (
-                  <div className="flex items-center space-x-2 text-red-600 bg-red-50 p-3 rounded-lg">
-                    <AlertCircle className="h-5 w-5" />
-                    <span className="text-sm font-medium">{status.message}</span>
-                  </div>
-                )}
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  disabled={status.type === "loading"}
-                  className="w-full bg-primary hover:bg-primary/90"
-                >
-                  {status.type === "loading" ? (
-                    <>
-                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                      {t("sending")}
-                    </>
-                  ) : (
-                    <>
-                      <Send className="mr-2 h-5 w-5" />
-                      {t("send")}
-                    </>
+                  {/* Status Messages */}
+                  {status.type === "success" && (
+                    <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-3 rounded-lg">
+                      <CheckCircle className="h-5 w-5" />
+                      <span className="text-sm font-medium">{status.message}</span>
+                    </div>
                   )}
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+
+                  {status.type === "error" && (
+                    <div className="flex items-center space-x-2 text-red-600 bg-red-50 p-3 rounded-lg">
+                      <AlertCircle className="h-5 w-5" />
+                      <span className="text-sm font-medium">{status.message}</span>
+                    </div>
+                  )}
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={status.type === "loading"}
+                    className="w-full bg-primary hover:bg-primary/90"
+                  >
+                    {status.type === "loading" ? (
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        {t("sending")}
+                      </>
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-5 w-5" />
+                        {t("send")}
+                      </>
+                    )}
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
 
           {/* Contact Information */}
           <div className="space-y-8">
@@ -257,7 +259,7 @@ export function ContactSection() {
             </Card>
 
             {/* Quick Response Promise */}
-            <Card className="bg-gradient-to-br from-accent/5 to-orange-secondary/5 border-accent/20">
+            {/* <Card className="bg-gradient-to-br from-accent/5 to-orange-secondary/5 border-accent/20">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="h-8 w-8 text-accent" />
@@ -267,7 +269,7 @@ export function ContactSection() {
                   Nous nous engageons à répondre à votre message dans les 24 heures ouvrables.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
