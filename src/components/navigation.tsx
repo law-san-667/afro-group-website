@@ -36,7 +36,7 @@ export function Navigation() {
 
   const navItems = [
     { key: "home", href: "/", sectionId: "home" },
-    { key: "about", href: "/about", sectionId: null },
+    // { key: "about", href: "/about", sectionId: null },
     { key: "services", href: "/services", sectionId: "services" },
     // { key: "blog", href: "/blog", sectionId: "blog" },
     { key: "contact", href: "/contact", sectionId: "contact" },

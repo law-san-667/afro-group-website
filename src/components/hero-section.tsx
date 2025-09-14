@@ -16,7 +16,7 @@ export function HeroSection() {
   }, [])
 
   const handleScrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
+    const aboutSection = document.getElementById("services")
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" })
     }
