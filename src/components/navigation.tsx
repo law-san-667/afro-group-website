@@ -36,9 +36,8 @@ export function Navigation() {
 
   const navItems = [
     { key: "home", href: "/", sectionId: "home" },
-    // { key: "about", href: "/about", sectionId: null },
     { key: "services", href: "/services", sectionId: "services" },
-    // { key: "blog", href: "/blog", sectionId: "blog" },
+    { key: "partners", href: "/partners", sectionId: "partners" },
     { key: "contact", href: "/contact", sectionId: "contact" },
   ]
 
@@ -53,7 +52,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <img src="/fined-logo-dark.png" alt="" className="rounded-lg" />
+              <img src="/fined-logo-dark.png" alt="AFRO Group Logo" className="rounded-lg" />
             </div>
             <span className={`font-bold text-xl transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}>
               AFRO Group
@@ -89,7 +88,7 @@ export function Navigation() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <LanguageSwitcher />
+            <LanguageSwitcher isScrolled={isScrolled} />
             {isHomePage ? (
               <Button variant="default" size="sm" onClick={() => handleSmoothScroll("contact")}>
                 {t("contact")}
@@ -103,12 +102,12 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-2">
-            <LanguageSwitcher />
+            <LanguageSwitcher isScrolled={isScrolled} />
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={isScrolled ? "text-foreground" : "text-white"}
+              className={`${isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10"}`}
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -117,21 +116,21 @@ export function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-background border-t border-border">
+          <div className="lg:hidden bg-background/95 backdrop-blur-md border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <div key={item.key}>
                   {isHomePage && item.sectionId ? (
                     <button
                       onClick={() => handleSmoothScroll(item.sectionId)}
-                      className="block w-full text-left px-3 py-2 text-foreground hover:text-accent font-medium"
+                      className="block w-full text-left px-3 py-2 text-foreground hover:text-accent hover:bg-muted rounded-md font-medium transition-colors"
                     >
                       {t(item.key)}
                     </button>
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-3 py-2 text-foreground hover:text-accent font-medium"
+                      className="block px-3 py-2 text-foreground hover:text-accent hover:bg-muted rounded-md font-medium transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {t(item.key)}
@@ -141,12 +140,22 @@ export function Navigation() {
               ))}
               <div className="px-3 py-2">
                 {isHomePage ? (
-                  <Button variant="default" size="sm" className="w-full" onClick={() => handleSmoothScroll("contact")}>
+                  <Button 
+                    variant="default" 
+                    size="sm" 
+                    className="w-full" 
+                    onClick={() => {
+                      handleSmoothScroll("contact")
+                      setIsMobileMenuOpen(false)
+                    }}
+                  >
                     {t("contact")}
                   </Button>
                 ) : (
                   <Button variant="default" size="sm" className="w-full" asChild>
-                    <Link href="/contact">{t("contact")}</Link>
+                    <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                      {t("contact")}
+                    </Link>
                   </Button>
                 )}
               </div>

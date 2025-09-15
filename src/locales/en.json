@@ -3,8 +3,14 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "partners": "Partners",
     "blog": "Blog",
     "contact": "Contact"
+  },
+  "partners": {
+    "title": "They trust us",
+    "subtitle": "Our trusted partners who accompany us in our mission to digitally transform Africa.",
+    "cta": "Become a partner"
   },
   "hero": {
     "title": "AFRO Group",

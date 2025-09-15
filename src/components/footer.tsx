@@ -27,6 +27,7 @@ export function Footer() {
     { key: "home", href: "/", sectionId: "home" },
     { key: "about", href: "/about", sectionId: null },
     { key: "services", href: "/services", sectionId: "services" },
+    { key: "partners", href: "/partners", sectionId: "partners" },
     { key: "contact", href: "/contact", sectionId: "contact" },
   ]
 

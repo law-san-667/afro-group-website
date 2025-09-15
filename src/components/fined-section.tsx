@@ -3,18 +3,18 @@
 import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { Card, CardContent } from "@/src/components/ui/card";
-import { Bot, PencilRuler, Users } from "lucide-react";
+import { Bot, GraduationCap, PencilRuler, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export function FinEdSection() {
   const t = useTranslations("fined");
 
   const features = [
-    // {
-    //   icon: GraduationCap,
-    //   titleKey: "education",
-    //   description: "Des modules interactifs et ludiques, conçus pour booster ton apprentissage et suivre tes avancées",
-    // },
+    {
+      icon: GraduationCap,
+      titleKey: "education",
+      description: "Des modules interactifs et ludiques, conçus pour booster ton apprentissage et suivre tes avancées",
+    },
     {
       icon: PencilRuler,
       titleKey: "tools",
@@ -35,40 +35,33 @@ export function FinEdSection() {
     },
   ];
 
-  const stats = [
-    { value: "95%", label: "Taux de satisfaction" },
-    { value: "50K+", label: "Utilisateurs actifs" },
-    { value: "85%", label: "Amélioration financière" },
-    { value: "24/7", label: "Support disponible" },
-  ];
-
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-background via-muted/30 to-background">
+    <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-background via-muted/30 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge
             variant="secondary"
             className="mb-4 bg-primary/10 text-primary border-primary/20"
           >
             {t("subtitle")}
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance leading-tight">
             {t("title")}
           </h2>
-          <p className="text-xl sm:text-2xl font-semibold text-muted-foreground mb-4">
+          <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-muted-foreground mb-4">
             {t("tagline")}
           </p>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed text-pretty">
             {t("description")}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center mb-16 sm:mb-20">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid gap-4 sm:gap-6">
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
@@ -76,18 +69,18 @@ export function FinEdSection() {
                     key={index}
                     className="border-border/50 hover:border-primary/30 transition-colors group"
                   >
-                    <CardContent className="p-4">
-                      <div className="flex items-start space-x-4">
+                    <CardContent className="p-4 sm:p-6">
+                      <div className="flex items-start space-x-3 sm:space-x-4">
                         <div className="flex-shrink-0">
-                          <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                            <Icon className="h-6 w-6 text-primary" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                           </div>
                         </div>
-                        <div>
-                          <h3 className="font-semibold text-foreground mb-2">
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">
                             {t(`features.${feature.titleKey}`)}
                           </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
+                          <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                             {feature.description}
                           </p>
                         </div>
@@ -99,16 +92,16 @@ export function FinEdSection() {
             </div>
 
             {/* Download Buttons */}
-            <div className="space-y-4 pt-4">
+            <div className="space-y-3 sm:space-y-4 pt-4">
               <p className="text-sm font-medium text-muted-foreground">
                 Téléchargez l'application :
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-3 sm:gap-4">
                 {/* App Store Button */}
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-6 py-4 h-auto border-2 hover:bg-muted/50 group"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full"
                   onClick={() =>
                     window.open(
                       "https://apps.apple.com/sn/app/fined-mobile/id6747647784",
@@ -116,9 +109,9 @@ export function FinEdSection() {
                     )
                   }
                 >
-                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center group-hover:bg-black/80 transition-colors">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center group-hover:bg-black/80 transition-colors flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >
@@ -126,7 +119,7 @@ export function FinEdSection() {
                       <path d="M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
                     </svg>
                   </div>
-                  <div className="text-left">
+                  <div className="text-left min-w-0 flex-1">
                     <div className="text-xs text-muted-foreground">
                       Télécharger sur
                     </div>
@@ -138,7 +131,7 @@ export function FinEdSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-6 py-4 h-auto border-2 hover:bg-muted/50 group"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full"
                   onClick={() =>
                     window.open(
                       "https://play.google.com/store/apps/details?id=com.lawsan.fined",
@@ -146,18 +139,18 @@ export function FinEdSection() {
                     )
                   }
                 >
-                  <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg flex items-center justify-center group-hover:from-green-500 group-hover:to-blue-600 transition-all">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg flex items-center justify-center group-hover:from-green-500 group-hover:to-blue-600 transition-all flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                     >
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
                     </svg>
                   </div>
-                  <div className="text-left">
+                  <div className="text-left min-w-0 flex-1">
                     <div className="text-xs text-muted-foreground">
-                      Disponible sur
+                      Disponibile sur
                     </div>
                     <div className="text-sm font-semibold">Google Play</div>
                   </div>
@@ -167,9 +160,9 @@ export function FinEdSection() {
           </div>
 
           {/* Right Visual */}
-          <div className="relative">
+          <div className="relative flex justify-center">
             {/* Main Phone Mockup */}
-            <div className="relative mx-auto w-80 h-[600px]">
+            <div className="relative w-64 sm:w-80 h-[480px] sm:h-[600px]">
               <div className="w-full h-full">
                 {/* Phone Screen Content */}
                 <img
@@ -180,27 +173,27 @@ export function FinEdSection() {
               </div>
             </div>
 
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-accent/20 rounded-full animate-pulse" />
-            <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce" />
-            <div className="absolute top-1/3 -right-8 w-12 h-12 bg-secondary/30 rounded-full animate-pulse delay-1000" />
+            {/* Floating Elements - hide on mobile */}
+            <div className="hidden sm:block absolute -top-4 -left-4 w-16 sm:w-20 h-16 sm:h-20 bg-accent/20 rounded-full animate-pulse" />
+            <div className="hidden sm:block absolute -bottom-6 -right-6 w-12 sm:w-16 h-12 sm:h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce" />
+            <div className="hidden sm:block absolute top-1/3 -right-8 w-10 sm:w-12 h-10 sm:h-12 bg-secondary/30 rounded-full animate-pulse delay-1000" />
           </div>
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-8 lg:p-12">
-          <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+        <div className="text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4">
             Prêt à transformer votre relation avec l'argent ?
           </h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-xl sm:max-w-2xl mx-auto">
             Rejoignez des milliers d'Africains qui ont déjà amélioré leur
             littératie financière avec FinEd.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 w-full sm:w-auto">
               Commencer gratuitement
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto">
               Planifier une démo
             </Button>
           </div>

@@ -3,8 +3,14 @@
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
+    "partners": "Partenaires",
     "blog": "Blog",
     "contact": "Contact"
+  },
+  "partners": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Nos partenaires de confiance qui nous accompagnent dans notre mission de transformation digitale de l'Afrique.",
+    "cta": "Devenir partenaire"
   },
   "hero": {
     "title": "African Financial Resources and Optimization",

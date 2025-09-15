@@ -90,31 +90,31 @@ export function ContactSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-background via-accent/5 to-background">
+    <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-background via-accent/5 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge variant="outline" className="mb-4 border-accent/30 text-accent">
             Contact
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">{t("title")}</h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-balance leading-tight">{t("title")}</h2>
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed text-pretty">
             {t("subtitle")}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20">
           {/* Contact Form */}
           <div className="h-fit">
             <Card className="border-border/50 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Envoyez-Nous un message</CardTitle>
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl sm:text-2xl text-foreground">Envoyez-nous un message</CardTitle>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4">
+              <CardContent className="px-4 sm:px-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">{t("name")}</Label>
+                      <Label htmlFor="name" className="text-sm">{t("name")}</Label>
                       <Input
                         id="name"
                         name="name"
@@ -127,7 +127,7 @@ export function ContactSection() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">{t("email")}</Label>
+                      <Label htmlFor="email" className="text-sm">{t("email")}</Label>
                       <Input
                         id="email"
                         name="email"
@@ -142,7 +142,7 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject">{t("subject")}</Label>
+                    <Label htmlFor="subject" className="text-sm">{t("subject")}</Label>
                     <Input
                       id="subject"
                       name="subject"
@@ -156,11 +156,11 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">{t("message")}</Label>
+                    <Label htmlFor="message" className="text-sm">{t("message")}</Label>
                     <Textarea
                       id="message"
                       name="message"
-                      rows={5}
+                      rows={4}
                       value={formData.message}
                       onChange={handleInputChange}
                       required
@@ -172,14 +172,14 @@ export function ContactSection() {
                   {/* Status Messages */}
                   {status.type === "success" && (
                     <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-3 rounded-lg">
-                      <CheckCircle className="h-5 w-5" />
+                      <CheckCircle className="h-5 w-5 flex-shrink-0" />
                       <span className="text-sm font-medium">{status.message}</span>
                     </div>
                   )}
 
                   {status.type === "error" && (
                     <div className="flex items-center space-x-2 text-red-600 bg-red-50 p-3 rounded-lg">
-                      <AlertCircle className="h-5 w-5" />
+                      <AlertCircle className="h-5 w-5 flex-shrink-0" />
                       <span className="text-sm font-medium">{status.message}</span>
                     </div>
                   )}
@@ -208,25 +208,25 @@ export function ContactSection() {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Informations de contact</h3>
-              <div className="space-y-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">Informations de contact</h3>
+              <div className="space-y-4 sm:space-y-6">
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon
                   return (
-                    <div key={index} className="flex items-start space-x-4">
+                    <div key={index} className="flex items-start space-x-3 sm:space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon className="h-6 w-6 text-primary" />
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                          <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                         </div>
                       </div>
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-1">{info.label}</h4>
+                      <div className="min-w-0 flex-1">
+                        <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">{info.label}</h4>
                         {info.href.startsWith("#") ? (
-                          <p className="text-muted-foreground">{info.value}</p>
+                          <p className="text-sm sm:text-base text-muted-foreground break-words">{info.value}</p>
                         ) : (
-                          <a href={info.href} className="text-muted-foreground hover:text-primary transition-colors">
+                          <a href={info.href} className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors break-words">
                             {info.value}
                           </a>
                         )}
@@ -239,9 +239,9 @@ export function ContactSection() {
 
             {/* Office Hours */}
             <Card className="bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
-              <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-4">Heures d'ouverture</h4>
-                <div className="space-y-2 text-sm">
+              <CardContent className="p-4 sm:p-6">
+                <h4 className="font-semibold text-foreground mb-3 sm:mb-4 text-base sm:text-lg">Heures d'ouverture</h4>
+                <div className="space-y-2 text-sm sm:text-base">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Lundi - Vendredi</span>
                     <span className="font-medium">8h00 - 18h00</span>
@@ -257,19 +257,6 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Quick Response Promise */}
-            {/* <Card className="bg-gradient-to-br from-accent/5 to-orange-secondary/5 border-accent/20">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="h-8 w-8 text-accent" />
-                </div>
-                <h4 className="font-semibold text-foreground mb-2">Réponse rapide garantie</h4>
-                <p className="text-sm text-muted-foreground">
-                  Nous nous engageons à répondre à votre message dans les 24 heures ouvrables.
-                </p>
-              </CardContent>
-            </Card> */}
           </div>
         </div>
       </div>
