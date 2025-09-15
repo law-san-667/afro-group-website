@@ -89,7 +89,7 @@ export function Navigation() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             <LanguageSwitcher isScrolled={isScrolled} />
-            {isHomePage ? (
+            {/* {isHomePage ? (
               <Button variant="default" size="sm" onClick={() => handleSmoothScroll("contact")}>
                 {t("contact")}
               </Button>
@@ -97,7 +97,7 @@ export function Navigation() {
               <Button variant="default" size="sm" asChild>
                 <Link href="/contact">{t("contact")}</Link>
               </Button>
-            )}
+            )} */}
           </div>
 
           {/* Mobile Menu Button */}

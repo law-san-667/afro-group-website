@@ -3,11 +3,16 @@
 import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { Card, CardContent } from "@/src/components/ui/card";
+import { useInView } from "@/src/hooks/use-in-view";
 import { Bot, GraduationCap, PencilRuler, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export function FinEdSection() {
   const t = useTranslations("fined");
+  const { ref: sectionRef, isInView } = useInView({ threshold: 0.1 });
+  const { ref: headerRef, isInView: isHeaderInView } = useInView({ threshold: 0.3 });
+  const { ref: contentRef, isInView: isContentInView } = useInView({ threshold: 0.2 });
+  const { ref: phoneRef, isInView: isPhoneInView } = useInView({ threshold: 0.3 });
 
   const features = [
     {
@@ -36,10 +41,20 @@ export function FinEdSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-background via-muted/30 to-background">
+    <section
+      ref={sectionRef}
+      className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-background via-muted/30 to-background overflow-hidden"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12 sm:mb-16">
+        {/* Header with animation */}
+        <div
+          ref={headerRef}
+          className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${
+            isHeaderInView
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <Badge
             variant="secondary"
             className="mb-4 bg-primary/10 text-primary border-primary/20"
@@ -58,8 +73,11 @@ export function FinEdSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center mb-16 sm:mb-20">
-          {/* Left Content */}
-          <div className="space-y-6 sm:space-y-8">
+          {/* Left Content with staggered animations */}
+          <div
+            ref={contentRef}
+            className="space-y-6 sm:space-y-8"
+          >
             {/* Features Grid */}
             <div className="grid gap-4 sm:gap-6">
               {features.map((feature, index) => {
@@ -67,12 +85,17 @@ export function FinEdSection() {
                 return (
                   <Card
                     key={index}
-                    className="border-border/50 hover:border-primary/30 transition-colors group"
+                    className={`border-border/50 hover:border-primary/30 transition-all duration-700 group ${
+                      isContentInView
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-8"
+                    }`}
+                    style={{ transitionDelay: `${index * 150}ms` }}
                   >
                     <CardContent className="p-4 sm:p-6">
                       <div className="flex items-start space-x-3 sm:space-x-4">
                         <div className="flex-shrink-0">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
                             <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                           </div>
                         </div>
@@ -91,8 +114,14 @@ export function FinEdSection() {
               })}
             </div>
 
-            {/* Download Buttons */}
-            <div className="space-y-3 sm:space-y-4 pt-4">
+            {/* Download Buttons with animation */}
+            <div
+              className={`space-y-3 sm:space-y-4 pt-4 transition-all duration-800 delay-600 ${
+                isContentInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+            >
               <p className="text-sm font-medium text-muted-foreground">
                 Téléchargez l'application :
               </p>
@@ -101,7 +130,7 @@ export function FinEdSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full transform hover:scale-105 transition-all duration-300"
                   onClick={() =>
                     window.open(
                       "https://apps.apple.com/sn/app/fined-mobile/id6747647784",
@@ -131,7 +160,7 @@ export function FinEdSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full transform hover:scale-105 transition-all duration-300"
                   onClick={() =>
                     window.open(
                       "https://play.google.com/store/apps/details?id=com.lawsan.fined",
@@ -159,8 +188,15 @@ export function FinEdSection() {
             </div>
           </div>
 
-          {/* Right Visual */}
-          <div className="relative flex justify-center">
+          {/* Right Visual with animation */}
+          <div
+            ref={phoneRef}
+            className={`relative flex justify-center transition-all duration-1000 delay-300 ${
+              isPhoneInView
+                ? "opacity-100 translate-x-0 scale-100"
+                : "opacity-0 translate-x-8 scale-95"
+            }`}
+          >
             {/* Main Phone Mockup */}
             <div className="relative w-64 sm:w-80 h-[480px] sm:h-[600px]">
               <div className="w-full h-full">
@@ -168,34 +204,21 @@ export function FinEdSection() {
                 <img
                   src="/fined-phone-mockup.png"
                   alt="fined-app-mockup"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
 
-            {/* Floating Elements - hide on mobile */}
-            <div className="hidden sm:block absolute -top-4 -left-4 w-16 sm:w-20 h-16 sm:h-20 bg-accent/20 rounded-full animate-pulse" />
-            <div className="hidden sm:block absolute -bottom-6 -right-6 w-12 sm:w-16 h-12 sm:h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce" />
-            <div className="hidden sm:block absolute top-1/3 -right-8 w-10 sm:w-12 h-10 sm:h-12 bg-secondary/30 rounded-full animate-pulse delay-1000" />
-          </div>
-        </div>
-
-        {/* Bottom CTA Section */}
-        <div className="text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl p-6 sm:p-8 lg:p-12">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4">
-            Prêt à transformer votre relation avec l'argent ?
-          </h3>
-          <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-xl sm:max-w-2xl mx-auto">
-            Rejoignez des milliers d'Africains qui ont déjà amélioré leur
-            littératie financière avec FinEd.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 w-full sm:w-auto">
-              Commencer gratuitement
-            </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Planifier une démo
-            </Button>
+            {/* Floating Elements - hide on mobile with enhanced animations */}
+            <div className={`hidden sm:block absolute -top-4 -left-4 w-16 sm:w-20 h-16 sm:h-20 bg-accent/20 rounded-full animate-pulse transition-all duration-1000 delay-700 ${
+              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            }`} />
+            <div className={`hidden sm:block absolute -bottom-6 -right-6 w-12 sm:w-16 h-12 sm:h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce transition-all duration-1000 delay-900 ${
+              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            }`} />
+            <div className={`hidden sm:block absolute top-1/3 -right-8 w-10 sm:w-12 h-10 sm:h-12 bg-secondary/30 rounded-full animate-pulse delay-1000 transition-all duration-1000 delay-1100 ${
+              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            }`} />
           </div>
         </div>
       </div>
