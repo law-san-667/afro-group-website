@@ -1,6 +1,5 @@
 "use client";
 
-import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import {
   Card,
@@ -67,7 +66,7 @@ export function BetaConsultingSection() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Header with Logo - Animated */}
+        {/* Header with Logo - Enhanced Animation */}
         <div 
           ref={headerRef}
           className={`text-center mb-16 transition-all duration-1000 ${
@@ -77,17 +76,54 @@ export function BetaConsultingSection() {
           }`}
         >
           <div className="flex justify-center mb-6">
-            <div className={`relative group transition-all duration-800 delay-200 ${
-              isHeaderInView ? "opacity-100 scale-100" : "opacity-0 scale-90"
+            <div className={`relative group transition-all duration-1200 ease-out delay-200 ${
+              isHeaderInView ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-50 -rotate-12"
             }`}>
-              <div className="absolute -inset-4 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300" />
-              <div className="relative bg-white rounded-2xl border border-gray-100 p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
-                <img 
-                  src="/beta.png" 
-                  alt="BETA Consulting Logo" 
-                  className="h-20 w-auto mx-auto"
-                />
+              {/* Animated Background Glow */}
+              <div className={`absolute -inset-6 rounded-3xl bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-blue-400/20 blur-xl transition-all duration-1000 ${
+                isHeaderInView ? "opacity-100 scale-100" : "opacity-0 scale-75"
+              } group-hover:blur-2xl group-hover:scale-110`} />
+              
+              {/* Rotating Border Animation */}
+              {/* <div className={`absolute -inset-3 rounded-2xl transition-all duration-1000 delay-400 ${
+                isHeaderInView ? "opacity-100 rotate-0" : "opacity-0 rotate-45"
+              }`}>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-blue-500/30 animate-spin-slow opacity-50 group-hover:opacity-75" />
+              </div> */}
+              
+              {/* Main Logo Container */}
+              <div className={`relative bg-white rounded-2xl border border-gray-100 p-1 shadow-lg transition-all duration-800 delay-300 ${
+                isHeaderInView ? "shadow-xl scale-100" : "shadow-sm scale-90"
+              } group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:scale-105`}>
+                <div className="relative overflow-hidden rounded-xl">
+                  {/* Logo Image with Enhanced Animation */}
+                  <img 
+                    src="/beta.png" 
+                    alt="BETA Consulting Logo" 
+                    className={`h-32 w-auto mx-auto transition-all duration-1000 delay-500 ${
+                      isHeaderInView 
+                        ? "opacity-100 scale-100 rotate-0 brightness-100" 
+                        : "opacity-0 scale-75 rotate-6 brightness-125"
+                    } group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-110`}
+                  />
+                  
+                  {/* Shine Effect Overlay */}
+                  {/* <div className={`absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform transition-all duration-1500 ${
+                    isHeaderInView ? "translate-x-full opacity-100" : "-translate-x-full opacity-0"
+                  } group-hover:translate-x-full group-hover:duration-700`} style={{ transform: 'skewX(-25deg)' }} /> */}
+                </div>
               </div>
+              
+              {/* Floating Particles Animation */}
+              <div className={`absolute -top-2 -right-2 w-3 h-3 bg-blue-400 rounded-full transition-all duration-1000 delay-700 ${
+                isHeaderInView ? "opacity-70 animate-float" : "opacity-0"
+              }`} />
+              <div className={`absolute -bottom-1 -left-1 w-2 h-2 bg-purple-400 rounded-full transition-all duration-1000 delay-900 ${
+                isHeaderInView ? "opacity-60 animate-float-delayed" : "opacity-0"
+              }`} />
+              <div className={`absolute top-1/3 -right-3 w-1.5 h-1.5 bg-green-400 rounded-full transition-all duration-1000 delay-1100 ${
+                isHeaderInView ? "opacity-50 animate-float-slow" : "opacity-0"
+              }`} />
             </div>
           </div>
           
@@ -168,6 +204,61 @@ export function BetaConsultingSection() {
           </div>
         </div>
       </div>
+
+      {/* Custom CSS for animations */}
+      <style jsx>{`
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-10px) rotate(180deg);
+          }
+        }
+        
+        @keyframes float-delayed {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-8px) rotate(-180deg);
+          }
+        }
+        
+        @keyframes float-slow {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-6px) rotate(360deg);
+          }
+        }
+        
+        .animate-spin-slow {
+          animation: spin-slow 20s linear infinite;
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-float-delayed {
+          animation: float-delayed 4s ease-in-out infinite 1s;
+        }
+        
+        .animate-float-slow {
+          animation: float-slow 5s ease-in-out infinite 2s;
+        }
+      `}</style>
     </section>
   );
 }

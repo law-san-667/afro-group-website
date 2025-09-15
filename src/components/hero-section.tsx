@@ -33,7 +33,7 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with Africa Map */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-primary" />
+        <div style={{ backgroundColor: "#10493F" }} className="absolute inset-0" />
         <div
           className={`absolute inset-0 opacity-40 transition-all duration-1000 ${
             isLoaded ? "scale-100 opacity-40" : "scale-110 opacity-0"
@@ -120,7 +120,8 @@ export function HeroSection() {
             <Button
               size="lg"
               onClick={handleScrollToServices}
-              className="w-full sm:w-auto bg-secondary hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/25"
+              style={{ backgroundColor: "#10493F" }}
+              className="w-full sm:w-auto hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/25"
             >
               {t("cta")}
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />

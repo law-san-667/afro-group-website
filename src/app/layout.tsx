@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 // Loading Component
 function LoadingScreen() {
   return (
-    <div className="min-h-screen bg-primary flex items-center justify-center">
+    <div style={{ backgroundColor: "#10493F" }} className="min-h-screen flex items-center justify-center">
       <div className="text-center">
         {/* Animated Logo/Icon */}
         <div className="relative mb-8">
