@@ -13,9 +13,9 @@ export function PartnersSection() {
   const [startX, setStartX] = useState(0)
   const [scrollLeft, setScrollLeft] = useState(0)
 
-  const { ref: sectionRef, isInView } = useInView({ threshold: 0.1 })
-  const { ref: headerRef, isInView: isHeaderInView } = useInView({ threshold: 0.3 })
-  const { ref: sliderWrapperRef, isInView: isSliderInView } = useInView({ threshold: 0.2 })
+  const { ref: sectionRef, isInView } = useInView<HTMLDivElement>({ threshold: 0.1 })
+  const { ref: headerRef, isInView: isHeaderInView } = useInView<HTMLDivElement>({ threshold: 0.3 })
+  const { ref: sliderWrapperRef, isInView: isSliderInView } = useInView<HTMLDivElement>({ threshold: 0.2 })
 
   const partners = [
     {

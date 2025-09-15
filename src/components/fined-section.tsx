@@ -9,10 +9,10 @@ import { useTranslations } from "next-intl";
 
 export function FinEdSection() {
   const t = useTranslations("fined");
-  const { ref: sectionRef, isInView } = useInView({ threshold: 0.1 });
-  const { ref: headerRef, isInView: isHeaderInView } = useInView({ threshold: 0.3 });
-  const { ref: contentRef, isInView: isContentInView } = useInView({ threshold: 0.2 });
-  const { ref: phoneRef, isInView: isPhoneInView } = useInView({ threshold: 0.3 });
+  const { ref: sectionRef, isInView } = useInView<HTMLDivElement>({ threshold: 0.1 });
+  const { ref: headerRef, isInView: isHeaderInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
+  const { ref: contentRef, isInView: isContentInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
+  const { ref: phoneRef, isInView: isPhoneInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
 
   const features = [
     {

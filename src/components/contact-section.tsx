@@ -36,10 +36,10 @@ export function ContactSection() {
   })
   const [status, setStatus] = useState<FormStatus>({ type: "idle", message: "" })
 
-  const { ref: sectionRef, isInView } = useInView({ threshold: 0.1 })
-  const { ref: headerRef, isInView: isHeaderInView } = useInView({ threshold: 0.3 })
-  const { ref: formRef, isInView: isFormInView } = useInView({ threshold: 0.2 })
-  const { ref: infoRef, isInView: isInfoInView } = useInView({ threshold: 0.2 })
+  const { ref: sectionRef, isInView } = useInView<HTMLElement>({ threshold: 0.1 })
+  const { ref: headerRef, isInView: isHeaderInView } = useInView<HTMLDivElement>({ threshold: 0.3 })
+  const { ref: formRef, isInView: isFormInView } = useInView<HTMLDivElement>({ threshold: 0.2 })
+  const { ref: infoRef, isInView: isInfoInView } = useInView<HTMLDivElement>({ threshold: 0.2 })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target

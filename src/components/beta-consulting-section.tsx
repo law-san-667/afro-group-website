@@ -19,10 +19,10 @@ import { useTranslations } from "next-intl";
 
 export function BetaConsultingSection() {
   const t = useTranslations("beta");
-  const { ref: sectionRef, isInView } = useInView({ threshold: 0.1 });
-  const { ref: headerRef, isInView: isHeaderInView } = useInView({ threshold: 0.3 });
-  const { ref: servicesRef, isInView: isServicesInView } = useInView({ threshold: 0.2 });
-  const { ref: ctaRef, isInView: isCtaInView } = useInView({ threshold: 0.3 });
+  const { ref: sectionRef, isInView } = useInView<HTMLElement>({ threshold: 0.1 });
+  const { ref: headerRef, isInView: isHeaderInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
+  const { ref: servicesRef, isInView: isServicesInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
+  const { ref: ctaRef, isInView: isCtaInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
 
   const services = [
     {
@@ -168,7 +168,7 @@ export function BetaConsultingSection() {
                 className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 px-8 py-4 text-base sm:text-lg font-semibold"
                 onClick={() => window.open("https://betaconsulting-sn.com", "_blank")}
               >
-                {t("seeMore")}
+                Voir plus de détails
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </div>
