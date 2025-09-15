@@ -214,7 +214,8 @@ export function ContactSection() {
                     type="submit"
                     size="lg"
                     disabled={status.type === "loading"}
-                    className="w-full bg-primary hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+                    style={{ backgroundColor: "#10493F" }}
+                    className="w-full hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
                   >
                     {status.type === "loading" ? (
                       <>
