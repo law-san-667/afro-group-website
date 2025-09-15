@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl"
 import { useEffect, useRef, useState } from "react"
 
 export function PartnersSection() {
-  const t = useTranslations()
+  const t = useTranslations("partners")
   const sliderRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [isDragging, setIsDragging] = useState(false)
@@ -133,41 +133,17 @@ export function PartnersSection() {
     const container = containerRef.current
     if (!container) return
 
-    const handleMouseDown = (e: MouseEvent) => {
-      setIsDragging(true)
-      setStartX(e.pageX - container.offsetLeft)
-      setScrollLeft(container.scrollLeft)
-      container.style.cursor = 'grabbing'
-    }
-
     const handleTouchStart = (e: TouchEvent) => {
       setIsDragging(true)
       setStartX(e.touches[0].pageX - container.offsetLeft)
       setScrollLeft(container.scrollLeft)
     }
 
-    const handleMouseLeave = () => {
-      setIsDragging(false)
-      container.style.cursor = 'grab'
-    }
-
-    const handleMouseUp = () => {
-      setIsDragging(false)
-      container.style.cursor = 'grab'
-    }
-
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isDragging) return
-      e.preventDefault()
-      const x = e.pageX - container.offsetLeft
-      const walk = (x - startX) * 2 // Scroll speed multiplier
-      container.scrollLeft = scrollLeft - walk
-    }
-
     const handleTouchMove = (e: TouchEvent) => {
       if (!isDragging) return
+      e.preventDefault()
       const x = e.touches[0].pageX - container.offsetLeft
-      const walk = (x - startX) * 2
+      const walk = (x - startX) * 1.5
       container.scrollLeft = scrollLeft - walk
     }
 
@@ -176,23 +152,12 @@ export function PartnersSection() {
     }
 
     // Add event listeners
-    container.addEventListener('mousedown', handleMouseDown)
-    container.addEventListener('touchstart', handleTouchStart)
-    container.addEventListener('mouseleave', handleMouseLeave)
-    container.addEventListener('mouseup', handleMouseUp)
-    container.addEventListener('mousemove', handleMouseMove)
-    container.addEventListener('touchmove', handleTouchMove)
+    container.addEventListener('touchstart', handleTouchStart, { passive: false })
+    container.addEventListener('touchmove', handleTouchMove, { passive: false })
     container.addEventListener('touchend', handleTouchEnd)
 
-    // Set initial cursor
-    container.style.cursor = 'grab'
-
     return () => {
-      container.removeEventListener('mousedown', handleMouseDown)
       container.removeEventListener('touchstart', handleTouchStart)
-      container.removeEventListener('mouseleave', handleMouseLeave)
-      container.removeEventListener('mouseup', handleMouseUp)
-      container.removeEventListener('mousemove', handleMouseMove)
       container.removeEventListener('touchmove', handleTouchMove)
       container.removeEventListener('touchend', handleTouchEnd)
     }
@@ -214,17 +179,17 @@ export function PartnersSection() {
           }`}
         >
           <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
-            Partenaires
+            {t("name")}
           </Badge>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance leading-tight">
-            Ils nous font confiance
+            {t("title")}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl sm:max-w-2xl mx-auto">
-            Nos partenaires de confiance qui nous accompagnent dans notre mission de transformation digitale de l'Afrique.
+            {t("subtitle")}
           </p>
         </div>
 
-        {/* Desktop Partners Slider with animation */}
+        {/* Desktop Partners Slider */}
         <div 
           ref={sliderWrapperRef}
           className={`hidden sm:block relative overflow-hidden mb-8 sm:mb-12 transition-all duration-1000 delay-300 ${
@@ -261,48 +226,31 @@ export function PartnersSection() {
           </div>
         </div>
 
-        {/* Mobile Partners Slider with animation */}
-        <div 
-          className={`block sm:hidden mb-8 transition-all duration-800 delay-300 ${
-            isSliderInView
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 translate-x-4"
-          }`}
-        >
-          <p className="text-xs text-muted-foreground text-center mb-4">
-            Touchez un partenaire pour visiter son site web
-          </p>
+        {/* Mobile Partners Slider - Simplified and Always Visible */}
+        <div className="sm:hidden mb-8">
           <div 
             ref={containerRef}
-            className="overflow-x-auto scrollbar-hide"
-            style={{ 
-              scrollbarWidth: 'none', 
-              msOverflowStyle: 'none',
-              WebkitOverflowScrolling: 'touch'
-            }}
+            className="overflow-x-scroll pb-4 scrollbar-hide"
           >
-            <div className="flex gap-6 pb-4 px-2" style={{ width: 'max-content' }}>
+            <div className="flex gap-4 px-4 w-max">
               {partners.map((partner, index) => (
                 <div
                   key={partner.name}
-                  className={`flex-shrink-0 group relative cursor-pointer transition-all duration-500 ${
-                    isSliderInView
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-4"
-                  }`}
-                  style={{ transitionDelay: `${index * 100}ms` }}
+                  className="flex-shrink-0 cursor-pointer"
                   onClick={() => handlePartnerClick(partner.website)}
                 >
-                  <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 w-20 h-20 border border-gray-100 hover:border-primary/30 transform hover:scale-105">
-                    <img
-                      src={partner.logo}
-                      alt={`${partner.name} logo`}
-                      className="max-w-full max-h-full object-contain filter grayscale group-active:grayscale-0 opacity-80 group-active:opacity-100 transition-all duration-200"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="mt-2 text-center">
-                    <p className="text-xs font-medium text-foreground truncate w-20">{partner.name}</p>
+                  <div className="flex flex-col items-center">
+                    <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-sm active:shadow-md transition-all duration-300 w-20 h-20 border border-gray-100 active:border-primary/30 transform active:scale-105">
+                      <img
+                        src={partner.logo}
+                        alt={`${partner.name} logo`}
+                        className="max-w-full max-h-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="text-xs font-medium text-foreground mt-2 text-center w-20 truncate">
+                      {partner.name}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -310,7 +258,7 @@ export function PartnersSection() {
           </div>
         </div>
 
-        {/* Call to Action with animation */}
+        {/* Call to Action */}
         <div 
           className={`text-center transition-all duration-800 delay-600 ${
             isSliderInView
@@ -337,7 +285,6 @@ export function PartnersSection() {
         </div>
       </div>
 
-      {/* Hide scrollbar CSS */}
       <style jsx>{`
         .scrollbar-hide {
           -ms-overflow-style: none;

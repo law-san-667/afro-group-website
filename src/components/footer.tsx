@@ -39,13 +39,13 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer style={{ backgroundColor: "#10493F" }} className=" text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-15 h-15 bg-primary rounded-lg flex items-center justify-center">
               <img src="/fined-logo-dark.png" alt="" className="rounded-lg" />
             </div>
               <span className="font-bold text-xl">AFRO Group</span>
@@ -94,7 +94,7 @@ export function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-lg mb-6">Newsletter</h3>
             <p className="text-primary-foreground/80 mb-4 text-sm">
               Restez informé de nos dernières actualités et innovations.
@@ -109,7 +109,8 @@ export function Footer() {
                 S'abonner
               </Button>
             </div>
-          </div>
+          </div> 
+          */}
         </div>
 
         {/* Bottom Section */}

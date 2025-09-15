@@ -126,7 +126,7 @@ export function HeroSection() {
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
 
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               onClick={handleScrollToAbout}
@@ -134,7 +134,7 @@ export function HeroSection() {
             >
               <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
               {t("learnMore")}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

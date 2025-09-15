@@ -8,6 +8,7 @@
     "contact": "Contact"
   },
   "partners": {
+    "name": "Partenaires",
     "title": "Ils nous font confiance",
     "subtitle": "Nos partenaires de confiance qui nous accompagnent dans notre mission de transformation digitale de l'Afrique.",
     "cta": "Devenir partenaire"
@@ -15,7 +16,7 @@
   "hero": {
     "title": "African Financial Resources and Optimization",
     "subtitle": "Votre partenaire de confiance pour bâtir une souveraineté économique durable en Afrique.",
-    "description": "Nous developpons des solutions technologiques de pointe pour favoriser l’inclusion financière et accompagner l’adoption des technologies émergentes, au service d’un développement intégré et durable de l’Afrique.",
+    "description": "Nous developpons des solutions technologiques de pointe pour favoriser l'inclusion financière et accompagner l'adoption des technologies émergentes, au service d'un développement intégré et durable de l'Afrique.",
     "cta": "Découvrir nos solutions",
     "learnMore": "En savoir plus"
   },
@@ -30,12 +31,20 @@
     "subtitle": "Éducation financière digitale",
     "tagline": "Carrières d'avenir dans la finance",
     "description": "FinEd, c'est bien plus qu'une application : une plateforme intelligente qui t'apprend à maîtriser ton argent tout en te donnant les outils digitaux pour gérer tes finances au quotidien.",
+    "downloadText": "Téléchargez l'application :",
+    "downloadOn": "Télécharger sur",
+    "availableOn": "Disponible sur",
     "features": {
       "education": "Modules d'éducation financière interactifs",
-      "wallet": "Gestionnaire de portefeuille numérique",
       "tools": "Outils financiers accessibles",
       "community": "Communauté d'apprentissage dynamique",
       "ai": "Assistant virtuel IA"
+    },
+    "featuresDescription": {
+      "education": "Des modules interactifs couvrant les bases de la gestion financière, l'investissement, l'épargne et plus encore.",
+      "tools": "Des outils pratiques pour suivre vos dépenses, établir des budgets et planifier vos objectifs financiers.",
+      "community": "Rejoignez une communauté d'apprenants pour partager des conseils, poser des questions et progresser ensemble.",
+      "ai": "Un assistant virtuel alimenté par l'IA pour répondre à vos questions financières et vous guider dans votre apprentissage."
     },
     "cta": "Découvrir FinEd"
   },
@@ -43,13 +52,18 @@
     "title": "BETA Consulting",
     "seeMore": "En savoir plus sur BETA Consulting",
     "subtitle": "Conseil en transformation digitale",
-    "description": "Notre division conseil accompagne les entreprises et institutions dans leur transformation digitale, avec une expertise particulière dans les secteurs financier et éducatif.",
+    "description": "BETA Consulting conseille et guide les entreprises et institutions dans leur transformation digitale via la blockchain, en offrant une expertise pointue dans les secteurs financiers, logistiques et administratifs.",
     "services": {
-      "strategy": "Stratégie digitale",
-      "implementation": "Mise en œuvre technologique",
       "training": "Formation et accompagnement",
-      "support": "Support technique continu"
+      "strategy": "Conseil en stratégie",
+      "implementation": "Développement de solutions"
     },
+    "servicesDescription": {
+      "training": "Développement de solutions IT Blockchain adaptées à vos réalités.",
+      "strategy": "Formation et accompagnement de vos équipes professionnelles.",
+      "implementation": "Accompagnement et conseil en stratégie blockchain."
+    },
+    "footer": "Explorez comment BETA Consulting peut transformer votre entreprise grâce à l'expertise blockchain.",
     "cta": "Nos services conseil"
   },
   "impact": {
@@ -67,18 +81,25 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "subtitle": "Vous êtes une entreprise ou une institution et souhaitez collaborer, contribuer ou bénéficier de nos solutions innovantes ? Contactez-nous dès aujourd’hui et construisons ensemble des projets à fort impact pour l’Afrique.",
+    "subtitle": "Vous êtes une entreprise ou une institution et souhaitez collaborer, contribuer ou bénéficier de nos solutions innovantes ? Contactez-nous dès aujourd'hui et construisons ensemble des projets à fort impact pour l'Afrique.",
     "name": "Nom complet",
     "email": "Adresse email",
+    "sendUsAMessage": "Envoyez-nous un message",
     "subject": "Sujet",
     "message": "Message",
     "send": "Envoyer le message",
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès !",
-    "error": "Erreur lors de l'envoi. Veuillez réessayer."
+    "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "contactInfo": {
+      "title": "Informations de contact",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email"
+    }
   },
   "footer": {
-    "description": "AFRO Group - Transformer l’avenir de l’Afrique grâce à la finance, la technologie et l’éducation.",
+    "description": "AFRO Group - Transformer l'avenir de l'Afrique grâce à la finance, la technologie et l'éducation.",
     "quickLinks": "Liens rapides",
     "home": "Accueil",
     "about": "À propos",

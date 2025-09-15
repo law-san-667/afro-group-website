@@ -76,19 +76,19 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
+      label: t("contactInfo.email"),
       value: "contact@afrogroup-sn.com",
       href: "mailto:contact@afrogroup-sn.com",
     },
     {
       icon: Phone,
-      label: "Téléphone",
+      label: t("contactInfo.phone"),
       value: "+221 77 403 82 37",
       href: "tel:+221774038237",
     },
     {
       icon: MapPin,
-      label: "Adresse",
+      label: t("contactInfo.address"),
       value: "Dakar, Nord Foire BCEAO 2 RA06",
       href: "#",
     },
@@ -133,7 +133,7 @@ export function ContactSection() {
             <Card className="border-border/50 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl sm:text-2xl text-foreground">
-                  Envoyez-nous un message
+                  {t("sendUsAMessage")}
                 </CardTitle>
               </CardHeader>
               <CardContent className="px-4 sm:px-6">
@@ -244,7 +244,7 @@ export function ContactSection() {
           >
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">
-                Informations de contact
+                {t("contactInfo.title")}
               </h3>
               <div className="space-y-4 sm:space-y-6">
                 {contactInfo.map((info, index) => {
@@ -274,7 +274,7 @@ export function ContactSection() {
                           </p>
                         ) : (
                           <a 
-                            href={info.href} 
+                            href={info.href}
                             className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-all duration-300 break-words hover:underline"
                           >
                             {info.value}

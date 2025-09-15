@@ -104,7 +104,7 @@ export function FinEdSection() {
                             {t(`features.${feature.titleKey}`)}
                           </h3>
                           <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                            {feature.description}
+                            {t(`featuresDescription.${feature.titleKey}`)}
                           </p>
                         </div>
                       </div>
@@ -123,14 +123,14 @@ export function FinEdSection() {
               }`}
             >
               <p className="text-sm font-medium text-muted-foreground">
-                Téléchargez l'application :
+                {t("downloadText")}
               </p>
-              <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex flex-row gap-3 sm:gap-4">
                 {/* App Store Button */}
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full transform hover:scale-105 transition-all duration-300"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
                   onClick={() =>
                     window.open(
                       "https://apps.apple.com/sn/app/fined-mobile/id6747647784",
@@ -150,7 +150,7 @@ export function FinEdSection() {
                   </div>
                   <div className="text-left min-w-0 flex-1">
                     <div className="text-xs text-muted-foreground">
-                      Télécharger sur
+                      {t("downloadOn")}
                     </div>
                     <div className="text-sm font-semibold">App Store</div>
                   </div>
@@ -160,7 +160,7 @@ export function FinEdSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group w-full transform hover:scale-105 transition-all duration-300"
+                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
                   onClick={() =>
                     window.open(
                       "https://play.google.com/store/apps/details?id=com.lawsan.fined",
@@ -179,7 +179,7 @@ export function FinEdSection() {
                   </div>
                   <div className="text-left min-w-0 flex-1">
                     <div className="text-xs text-muted-foreground">
-                      Disponibile sur
+                      {t("availableOn")}
                     </div>
                     <div className="text-sm font-semibold">Google Play</div>
                   </div>

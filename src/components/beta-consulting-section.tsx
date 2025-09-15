@@ -27,21 +27,21 @@ export function BetaConsultingSection() {
   const services = [
     {
       icon: Users,
-      title: "Formation et accompagnement",
+      titleKey: "training",
       description: "Formation et accompagnement de vos équipes professionnelles",
       color: "bg-blue-100",
       iconColor: "text-blue-700",
     },
     {
       icon: Lightbulb,
-      title: "Conseil en stratégie",
+      titleKey: "strategy",
       description: "Accompagnement et conseil en stratégie blockchain",
       color: "bg-green-100",
       iconColor: "text-green-700",
     },
     {
       icon: Code,
-      title: "Développement de solutions",
+      titleKey: "implementation",
       description: "Développement de solutions IT Blockchain adaptées à vos réalités",
       color: "bg-purple-100",
       iconColor: "text-purple-700",
@@ -91,13 +91,6 @@ export function BetaConsultingSection() {
             </div>
           </div>
           
-          <Badge
-            variant="outline"
-            className="mb-4 border-blue-500/30 text-blue-600 bg-blue-50/50"
-          >
-            Partenaire Technologique
-          </Badge>
-
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 text-balance leading-tight">
             BETA Consulting
           </h2>
@@ -107,7 +100,7 @@ export function BetaConsultingSection() {
           </h3>
           
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-pretty">
-            BETA Consulting conseille et guide les entreprises et institutions dans leur transformation digitale via la blockchain, en offrant une expertise pointue dans les secteurs financiers, logistiques et administratifs.
+            {t("description")}
           </p>
         </div>
 
@@ -135,12 +128,12 @@ export function BetaConsultingSection() {
                     </div>
                   </div>
                   <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    {service.title}
+                    {t(`services.${service.titleKey}`)}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {service.description}
+                    {t(`servicesDescription.${service.titleKey}`)}
                   </p>
                 </CardContent>
               </Card>
@@ -160,7 +153,7 @@ export function BetaConsultingSection() {
           <div className="relative max-w-2xl mx-auto">
             <div className="relative p-6 sm:p-8">
               <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                Explorez comment BETA Consulting peut transformer votre entreprise grâce à l'expertise blockchain
+                {t("footer")}
               </p>
               
               <Button 
@@ -168,7 +161,7 @@ export function BetaConsultingSection() {
                 className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 px-8 py-4 text-base sm:text-lg font-semibold"
                 onClick={() => window.open("https://betaconsulting-sn.com", "_blank")}
               >
-                Voir plus de détails
+                {t("seeMore")}
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </div>

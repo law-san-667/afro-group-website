@@ -8,6 +8,7 @@
     "contact": "Contact"
   },
   "partners": {
+    "name": "Partners",
     "title": "They trust us",
     "subtitle": "Our trusted partners who accompany us in our mission to digitally transform Africa.",
     "cta": "Become a partner"
@@ -30,12 +31,20 @@
     "subtitle": "Digital Financial Education",
     "tagline": "Future careers in finance",
     "description": "FinEd is much more than an app: an intelligent platform that teaches you to master your money while giving you digital tools to manage your daily finances.",
+    "downloadText": "Download the app:",
+    "downloadOn": "Download on",
+    "availableOn": "Available on",
     "features": {
       "education": "Interactive financial education modules",
-      "wallet": "Digital wallet manager",
       "tools": "Accessible financial tools",
       "community": "Dynamic learning community",
       "ai": "AI Virtual Assistant"
+    },
+    "featuresDescription": {
+      "education": "Interactive modules covering the basics of financial management, investing, saving, and more.",
+      "tools": "Practical tools to track your expenses, set budgets, and plan your financial goals.",
+      "community": "Join a community of learners to share tips, ask questions, and progress together.",
+      "ai": "An AI-powered virtual assistant to answer your financial questions and guide you in your learning."
     },
     "cta": "Discover FinEd"
   },
@@ -43,13 +52,18 @@
     "title": "BETA Consulting",
     "seeMore": "Learn more about BETA Consulting",
     "subtitle": "Digital transformation consulting",
-    "description": "Our consulting division supports companies and institutions in their digital transformation, with particular expertise in the financial and educational sectors.",
+    "description": "BETA Consulting advises and guides companies and institutions in their digital transformation through blockchain, offering in-depth expertise in the financial, logistics, and administrative sectors.",
     "services": {
-      "strategy": "Digital strategy",
-      "implementation": "Technology implementation",
       "training": "Training and support",
-      "support": "Continuous technical support"
+      "strategy": "Strategy consulting",
+      "implementation": "Solution development"
     },
+    "servicesDescription": {
+      "training": "Development of IT Blockchain solutions tailored to your realities.",
+      "strategy": "Training and support for your professional teams.",
+      "implementation": "Support and advice on blockchain strategy."
+    },
+    "footer": "Explore how BETA Consulting can transform your business with blockchain expertise.",
     "cta": "Our consulting services"
   },
   "impact": {
@@ -70,12 +84,19 @@
     "subtitle": "Are you a business or institution looking to collaborate, contribute, or benefit from our innovative solutions? Contact us today and let's build impactful projects for Africa together.",
     "name": "Full name",
     "email": "Email address",
+    "sendUsAMessage": "Send us a message",
     "subject": "Subject",
     "message": "Message",
     "send": "Send message",
     "sending": "Sending...",
     "success": "Message sent successfully!",
-    "error": "Error sending message. Please try again."
+    "error": "Error sending message. Please try again.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
   },
   "footer": {
     "description": "AFRO Group - Shaping Africa's future through finance, technology, and education.",
