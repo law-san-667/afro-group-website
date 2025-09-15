@@ -138,7 +138,7 @@ export function Navigation() {
                   )}
                 </div>
               ))}
-              <div className="px-3 py-2">
+              {/* <div className="px-3 py-2">
                 {isHomePage ? (
                   <Button 
                     variant="default" 
@@ -158,7 +158,7 @@ export function Navigation() {
                     </Link>
                   </Button>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
         )}

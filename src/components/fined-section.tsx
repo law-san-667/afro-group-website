@@ -55,12 +55,24 @@ export function FinEdSection() {
               : "opacity-0 translate-y-8"
           }`}
         >
+          <div className="flex-col gap-4 items-center justify-center mb-2 relative mx-auto">
+
+          <Badge
+            variant="secondary"
+            className="bg-primary/10 text-primary border-primary/20"
+            >
+            {t("subtitle")}
+          </Badge>
+          </div>
+                    <div className="flex-col gap-4 items-center justify-center mb-4 relative mx-auto">
+
           <Badge
             variant="secondary"
             className="mb-4 bg-primary/10 text-primary border-primary/20"
-          >
-            {t("subtitle")}
+            >
+            {t("secondsubtitle")}
           </Badge>
+          </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance leading-tight">
             {t("title")}
           </h2>
