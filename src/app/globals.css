@@ -220,3 +220,43 @@
     scroll-margin-top: 80px; /* Adjust based on your navigation height */
   }
 }
+
+/* Loading Screen Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 0.8s ease-out 0.3s both;
+}
+
+.animate-bounce-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-bounce-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-pulse-delay-1 {
+  animation-delay: 1s;
+}
+
+.animate-pulse-delay-2 {
+  animation-delay: 2s;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
