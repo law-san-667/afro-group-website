@@ -16,8 +16,8 @@ const languages = [
 	{
 		code: "en",
 		name: "English",
-		flag: "🇺🇸",
-		country: "United States",
+		flag: "🇬🇧",
+		country: "United Kingdom",
 	},
 ]
 
