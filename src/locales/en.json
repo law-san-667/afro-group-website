@@ -9,89 +9,91 @@
   },
   "partners": {
     "name": "Partners",
-    "title": "They trust us",
-    "subtitle": "Our trusted partners who accompany us in our mission to digitally transform Africa.",
-    "cta": "Become a partner"
+    "title": "They Trust Us",
+    "subtitle": "Our trusted partners who support us in our mission to drive Africa’s digital transformation.",
+    "cta": "Become a Partner",
+    "wantToBePartner": "Want to become a partner?",
+    "contactUs": "Contact Us"
   },
   "hero": {
-    "title": "AFRO Group",
-    "subtitle": "Your trusted partner for financial innovation in Africa",
-    "description": "We develop advanced technological solutions to democratize access to financial and educational services across the African continent.",
-    "cta": "Discover our solutions",
-    "learnMore": "Learn more"
+    "title": "African Financial Resources and Optimization",
+    "subtitle": "Your trusted partner in building sustainable economic sovereignty in Africa.",
+    "description": "We develop cutting-edge technological solutions to promote financial inclusion and support the adoption of emerging technologies, serving Africa’s integrated and sustainable development.",
+    "cta": "Discover Our Solutions",
+    "learnMore": "Learn More"
   },
   "company": {
     "title": "Our Mission",
-    "description": "AFRO Group is a technology company dedicated to financial and educational innovation in Africa. We create solutions that transform how Africans access financial services and education.",
+    "description": "AFRO Group is a tech company dedicated to financial and educational innovation in Africa. We create solutions that transform how Africans access financial services and education.",
     "vision": "Our Vision",
-    "visionText": "To become the leader in technological innovation in Africa, creating an inclusive and accessible financial and educational ecosystem for all."
+    "visionText": "To become Africa’s leader in technological innovation by building an inclusive and accessible financial and educational ecosystem."
   },
   "fined": {
     "title": "FinEd",
     "subtitle": "Digital Financial Education",
-    "secondsubtitle": "Future careers in finance",
-    "tagline": "Future careers in finance",
-    "description": "FinEd is much more than an app: an intelligent platform that teaches you to master your money while giving you digital tools to manage your daily finances.",
+    "secondsubtitle": "A Future in Finance",
+    "tagline": "Future Careers in Finance",
+    "description": "FinEd is more than just an app: it’s an intelligent platform that teaches you to master your money while giving you the digital tools to manage your finances every day.",
     "downloadText": "Download the app:",
     "downloadOn": "Download on",
     "availableOn": "Available on",
     "features": {
-      "education": "Interactive financial education modules",
-      "tools": "Accessible financial tools",
-      "community": "Dynamic learning community",
+      "education": "Interactive Financial Education Modules",
+      "tools": "Accessible Financial Tools",
+      "community": "Dynamic Learning Community",
       "ai": "AI Virtual Assistant"
     },
     "featuresDescription": {
-      "education": "Interactive modules covering the basics of financial management, investing, saving, and more.",
-      "tools": "Practical tools to track your expenses, set budgets, and plan your financial goals.",
-      "community": "Join a community of learners to share tips, ask questions, and progress together.",
-      "ai": "An AI-powered virtual assistant to answer your financial questions and guide you in your learning."
+      "education": "Interactive modules covering the basics of money management, investing, saving, and more.",
+      "tools": "Practical tools to track expenses, create budgets, and plan financial goals.",
+      "community": "Join a community of learners to share advice, ask questions, and grow together.",
+      "ai": "An AI-powered virtual assistant to answer your financial questions and guide your learning."
     },
     "cta": "Discover FinEd"
   },
   "beta": {
     "title": "BETA Consulting",
-    "seeMore": "Learn more about BETA Consulting",
-    "subtitle": "Digital transformation consulting",
-    "description": "BETA Consulting advises and guides companies and institutions in their digital transformation through blockchain, offering in-depth expertise in the financial, logistics, and administrative sectors.",
+    "seeMore": "Learn More About BETA Consulting",
+    "subtitle": "Digital Transformation Consulting",
+    "description": "BETA Consulting advises and guides companies and institutions in their digital transformation through blockchain, providing advanced expertise in financial, logistics, and administrative sectors.",
     "services": {
-      "training": "Training and support",
-      "strategy": "Strategy consulting",
-      "implementation": "Solution development"
+      "training": "Training & Support",
+      "strategy": "Strategic Consulting",
+      "implementation": "Solution Development"
     },
     "servicesDescription": {
-      "training": "Development of IT Blockchain solutions tailored to your realities.",
-      "strategy": "Training and support for your professional teams.",
-      "implementation": "Support and advice on blockchain strategy."
+      "implementation": "Development of blockchain IT solutions tailored to your needs.",
+      "training": "Professional seminars and training for your teams.Cool",
+      "strategy": "Blockchain strategy guidance and consulting."
     },
-    "footer": "Explore how BETA Consulting can transform your business with blockchain expertise.",
-    "cta": "Our consulting services"
+    "footer": "Discover how BETA Consulting can transform your business with blockchain expertise.",
+    "cta": "Our Consulting Services"
   },
   "impact": {
     "title": "Our Impact",
-    "users": "Active users",
-    "countries": "Countries covered",
+    "users": "Active Users",
+    "countries": "Countries Covered",
     "partners": "Partners",
-    "transactions": "Transactions processed"
+    "transactions": "Transactions Processed"
   },
   "blog": {
     "title": "News & Insights",
-    "subtitle": "Stay informed about the latest trends",
-    "readMore": "Read more",
-    "viewAll": "View all articles"
+    "subtitle": "Stay informed on the latest trends",
+    "readMore": "Read More",
+    "viewAll": "View All Articles"
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Are you a business or institution looking to collaborate, contribute, or benefit from our innovative solutions? Contact us today and let's build impactful projects for Africa together.",
-    "name": "Full name",
-    "email": "Email address",
-    "sendUsAMessage": "Send us a message",
+    "subtitle": "Are you a company or institution looking to collaborate, contribute, or benefit from our innovative solutions? Get in touch today and let’s build impactful projects for Africa together.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "sendUsAMessage": "Send Us a Message",
     "subject": "Subject",
     "message": "Message",
-    "send": "Send message",
+    "send": "Send Message",
     "sending": "Sending...",
     "success": "Message sent successfully!",
-    "error": "Error sending message. Please try again.",
+    "error": "An error occurred while sending. Please try again.",
     "contactInfo": {
       "title": "Contact Information",
       "address": "Address",
@@ -100,14 +102,14 @@
     }
   },
   "footer": {
-    "description": "AFRO Group - Shaping Africa's future through finance, technology, and education.",
-    "quickLinks": "Quick links",
-    "services": "Services",
-    "about": "About",
+    "description": "AFRO Group - Shaping Africa’s future through finance, technology, and education.",
+    "quickLinks": "Quick Links",
     "home": "Home",
-    "partners": "Partners",
+    "about": "About",
+    "services": "Services",
     "contact": "Contact",
-    "followUs": "Follow us",
+    "partners": "Partners",
+    "followUs": "Follow Us",
     "rights": "All rights reserved"
   }
 }

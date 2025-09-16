@@ -178,15 +178,15 @@ export function PartnersSection() {
               : "opacity-0 translate-y-8"
           }`}
         >
-          <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
-            {t("name")}
-          </Badge>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance leading-tight">
+          <Badge variant="outline" className=" mb-4 border-primary/30 text-primary">
             {t("title")}
-          </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-xl sm:max-w-2xl mx-auto">
+          </Badge>
+          {/* <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance leading-tight">
+            {t("title")}
+          </h2> */}
+          {/* <p className="text-base sm:text-lg text-muted-foreground max-w-xl sm:max-w-2xl mx-auto">
             {t("subtitle")}
-          </p>
+          </p> */}
         </div>
 
         {/* Desktop Partners Slider */}
@@ -267,7 +267,7 @@ export function PartnersSection() {
           }`}
         >
           <p className="text-sm sm:text-base text-muted-foreground mb-4">
-            Vous souhaitez devenir partenaire ?
+            {t("wantToBePartner")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -279,7 +279,7 @@ export function PartnersSection() {
               }}
               className="w-full sm:w-auto px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium transform hover:scale-105 hover:-translate-y-1"
             >
-              Nous contacter
+                {t("contactUs")}
             </button>
           </div>
         </div>

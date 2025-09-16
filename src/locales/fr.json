@@ -11,7 +11,9 @@
     "name": "Partenaires",
     "title": "Ils nous font confiance",
     "subtitle": "Nos partenaires de confiance qui nous accompagnent dans notre mission de transformation digitale de l'Afrique.",
-    "cta": "Devenir partenaire"
+    "cta": "Devenir partenaire",
+    "wantToBePartner": "Vous souhaitez devenir partenaire ?",
+    "contactUs": "Nous contacter"
   },
   "hero": {
     "title": "African Financial Resources and Optimization",
@@ -61,7 +63,7 @@
     },
     "servicesDescription": {
       "implementation": "Développement de solutions IT Blockchain adaptées à vos réalités.",
-      "training": "Formation et accompagnement de vos équipes professionnelles.",
+      "training": "Seminaires professionnels et formation de vos équipes ",
       "strategy": "Accompagnement et conseil en stratégie blockchain."
     },
     "footer": "Explorez comment BETA Consulting peut transformer votre entreprise grâce à l'expertise blockchain.",
