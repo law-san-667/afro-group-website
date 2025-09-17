@@ -9,10 +9,27 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "AFRO Group - Innovation Technologique pour l'Afrique",
+  title: "AFRO Group - Votre partenaire de confiance pour bâtir une souveraineté économique durable en Afrique",
   description:
     "Solutions technologiques avancées pour démocratiser l'accès aux services financiers et éducatifs en Afrique",
   generator: "v0.app",
+  openGraph: {
+    title: "AFRO Group - Votre partenaire de confiance pour bâtir une souveraineté économique durable en Afrique",
+    description:
+      "Nous developpons des solutions technologiques de pointe pour favoriser l'inclusion financière et accompagner l'adoption des technologies émergentes, au service d'un développement intégré et durable de l'Afrique.",
+    url: "https://afrogroup-sn.com",
+    siteName: "AFRO Group",
+    images: [
+      {
+        url: "https://afrogroup-sn.com/fined-logo-dark.png",
+        width: 1200,
+        height: 630,
+        alt: "AFRO Group",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
 }
 
 // Loading Component
