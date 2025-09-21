@@ -103,9 +103,9 @@ export function FinEdSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance leading-tight">
             {t("title")}
           </h2>
-          {/* <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-muted-foreground mb-4">
+          <p className="text-md sm:text-md lg:text-2xl font-semibold text-muted-foreground mb-4">
             {t("tagline")}
-          </p> */}
+          </p>
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed text-pretty">
             {t("description")}
           </p>
