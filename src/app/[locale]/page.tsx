@@ -21,8 +21,12 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
         <HeroSection />
       </section>
       <section id="services">
+        <section className="fined">
         <FinEdSection />
-        <BetaConsultingSection />
+        </section>
+        <section className="beta">
+          <BetaConsultingSection />
+        </section>
       </section>
       <section id="partners">
         <PartnersSection />

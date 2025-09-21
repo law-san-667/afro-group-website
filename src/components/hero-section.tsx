@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/src/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
@@ -22,10 +22,17 @@ export function HeroSection() {
     }
   }
 
-  const handleScrollToServices = () => {
-    const servicesSection = document.getElementById("services")
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" })
+  const handleScrollToFinEd = () => {
+    const finedSection = document.querySelector('[class*="fined"]') || document.getElementById("fined")
+    if (finedSection) {
+      finedSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  const handleScrollToBeta = () => {
+    const betaSection = document.querySelector('[class*="beta"]') || document.getElementById("beta")
+    if (betaSection) {
+      betaSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -119,23 +126,23 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              onClick={handleScrollToServices}
+              onClick={handleScrollToFinEd}
               style={{ backgroundColor: "#10493F" }}
               className="w-full sm:w-auto hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/25"
             >
-              {t("cta")}
+              {t("discoverFined")}
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
 
-            {/* <Button
+            <Button
               variant="outline"
               size="lg"
-              onClick={handleScrollToAbout}
+              onClick={handleScrollToBeta}
               className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
             >
-              <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
-              {t("learnMore")}
-            </Button> */}
+              {t("discoverBeta")}
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
           </div>
         </div>
       </div>

@@ -103,7 +103,7 @@ export function LanguageSwitcher({ isScrolled = false }: LanguageSwitcherProps) 
 				size="sm"
 				className={`flex items-center space-x-2 ${
 					isScrolled
-						? "text-foreground hover:bg-muted"
+						? "text-foreground hover:bg-muted hover:text-accent hover:bg-accent/10"
 						: "text-white hover:bg-white/10"
 				}`}
 				disabled={isPending}

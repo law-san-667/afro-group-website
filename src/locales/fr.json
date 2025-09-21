@@ -20,6 +20,8 @@
     "subtitle": "Votre partenaire de confiance pour bâtir une souveraineté économique durable en Afrique.",
     "description": "Nous developpons des solutions technologiques de pointe pour favoriser l'inclusion financière et accompagner l'adoption des technologies émergentes, au service d'un développement intégré et durable de l'Afrique.",
     "cta": "Découvrir nos solutions",
+    "discoverFined": "Découvrir FinEd",
+    "discoverBeta": "Découvrir BETA Consulting",
     "learnMore": "En savoir plus"
   },
   "company": {
@@ -38,7 +40,7 @@
     "downloadOn": "Télécharger sur",
     "availableOn": "Disponible sur",
     "features": {
-      "education": "Modules d'éducation financière interactifs",
+      "education": "Modules éducatifs et ludiques",
       "tools": "Outils financiers accessibles",
       "community": "Communauté d'apprentissage dynamique",
       "ai": "Assistant virtuel IA"
@@ -49,7 +51,117 @@
       "community": "Rejoignez une communauté d'apprenants pour partager des conseils, poser des questions et progresser ensemble.",
       "ai": "Un assistant virtuel alimenté par l'IA pour répondre à vos questions financières et vous guider dans votre apprentissage."
     },
-    "cta": "Découvrir FinEd"
+    "cta": "Découvrir FinEd",
+    "pricing": {
+      "title": "Nos Formules",
+      "subtitle": "Choisissez le plan qui vous convient",
+      "description": "Des solutions adaptées à chaque profil pour maîtriser vos finances et construire votre avenir financier.",
+      "monthly": "/ mois",
+      "yearly": "/ an",
+      "monthlyTitle": "Mensuel",
+      "yearlyTitle": "Annuel",
+      "mostPopular": "Plus populaire",
+      "getStarted": "Commencer",
+      "askAQuote": "Demander un devis",
+      "packs": {
+        "free": {
+          "name": "Gratuit",
+          "target": "Grand public, nouveaux utilisateurs",
+          "objective": "Attirer, rassurer et donner un avant-goût",
+          "price": {
+            "monthly": "Gratuit",
+            "yearly": "Gratuit"
+          },
+          "features": [
+            "3 vidéos gratuites",
+            "Suivi budgétaire basique",
+            "Accès challenges publics",
+            "Assistance IA limitée"
+          ]
+        },
+        "student": {
+          "name": "Étudiant",
+          "target": "Étudiants, universités",
+          "objective": "Vous êtes une école qui reconnaissez la valeur de l'éducation financière pour vos étudiants ?",
+          "price": {
+            "monthly": {
+              "cfa": "2 000 FCFA",
+              "usd": "3.50 USD"
+            },
+            "yearly": {
+              "cfa": "17 000 FCFA",
+              "usd": "28 USD"
+            }
+          },
+          "features": [
+            "Mini-cours financiers",
+            "Simulateur budget campus",
+            "Challenges épargne",
+            "Coaching financement études"
+          ]
+        },
+        "entrepreneur": {
+          "name": "Entrepreneur",
+          "target": "Jeunes entrepreneurs, TPE/PME",
+          "objective": "Aider les jeunes entrepreneurs à structurer leurs finances",
+          "price": {
+            "monthly": {
+              "cfa": "3 000 FCFA",
+              "usd": "5.00 USD"
+            },
+            "yearly": {
+              "cfa": "25 000 FCFA",
+              "usd": "42 USD"
+            }
+          },
+          "features": [
+            "Modules financement",
+            "Simulateur business plan",
+            "Suivi cashflow",
+            "Réseau mentors & investisseurs"
+          ]
+        },
+        "premium": {
+          "name": "Premium",
+          "target": "Cadres, professions libérales",
+          "objective": "Accompagner les cadres et salariés dans leur gestion patrimoniale",
+          "price": {
+            "monthly": {
+              "cfa": "5 000 FCFA",
+              "usd": "8.50 USD"
+            },
+            "yearly": {
+              "cfa": "45 000 FCFA",
+              "usd": "75 USD"
+            }
+          },
+          "features": [
+            "Suivi complet budget et dettes",
+            "Planification retraite",
+            "Conseiller virtuel",
+            "Rapports trimestriels",
+            "Masterclass exclusives"
+          ]
+        },
+        "b2g": {
+          "name": "B2G Éducation Financière Jeunes",
+          "target": "Ministères éducation/finances, écoles et universités",
+          "objective": "Vous êtes une entreprise/ONG qui souhaitez soutenir les programmes nationaux d’éducation financière  ou ajouter l'éducation financière à votre offre RSE ?",
+          "price": {
+            "yearly": {
+              "cfa": "10 - 50 millions FCFA",
+              "usd": "17 000 - 85 000 USD"
+            }
+          },
+          "features": [
+            "Modules pédagogiques",
+            "Formation enseignants",
+            "Accès gratuit via codes sponsorisés",
+            "Suivi impact"
+          ]
+        }
+      }
+    }
   },
   "beta": {
     "title": "BETA Consulting",

@@ -172,15 +172,15 @@ export function BetaConsultingSection() {
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                <CardHeader className="pb-6">
+                <CardHeader className="pb-0">
                   {/* Icon and Title on the same line */}
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-4 mb-4 items-start">
                     <div
                       className={`w-14 h-14 rounded-2xl flex items-center justify-center ${service.color} transition-all duration-300 group-hover:scale-110 flex-shrink-0`}
                     >
                       <Icon className={`h-7 w-7 ${service.iconColor}`} />
                     </div>
-                    <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors flex-1">
+                    <CardTitle className="text-sm sm:text-md text-gray-900 group-hover:text-blue-600 transition-colors flex-1">
                       {t(`servicesDescription.${service.titleKey}`)}
                       {/* {t(`services.${service.titleKey}`)} */}
                     </CardTitle>

@@ -30,15 +30,15 @@
   },
   "fined": {
     "title": "FinEd",
-    "subtitle": "Digital Financial Education",
-    "secondsubtitle": "A Future in Finance",
+    "subtitle": "Financial Literacy",
+    "secondsubtitle": "Emerging careers in finance",
     "tagline": "Future Careers in Finance",
     "description": "FinEd is more than just an app: it’s an intelligent platform that teaches you to master your money while giving you the digital tools to manage your finances every day.",
     "downloadText": "Download the app:",
     "downloadOn": "Download on",
     "availableOn": "Available on",
     "features": {
-      "education": "Interactive Financial Education Modules",
+      "education": "Educational and playful modules",
       "tools": "Accessible Financial Tools",
       "community": "Dynamic Learning Community",
       "ai": "AI Virtual Assistant"
@@ -49,7 +49,117 @@
       "community": "Join a community of learners to share advice, ask questions, and grow together.",
       "ai": "An AI-powered virtual assistant to answer your financial questions and guide your learning."
     },
-    "cta": "Discover FinEd"
+    "cta": "Discover FinEd",
+    "pricing": {
+      "title": "Our Plans",
+      "subtitle": "Choose the plan that suits you",
+      "description": "Tailored solutions for every profile to master your finances and build your financial future.",
+      "monthly": "/ month",
+      "yearly": "/ year",
+      "monthlyTitle": "Monthly",
+      "yearlyTitle": "Yearly",
+      "mostPopular": "Most Popular",
+      "getStarted": "Get Started",
+      "askAQuote": "Ask for a Quote",
+      "packs": {
+        "free": {
+          "name": "Free",
+          "target": "General public, new users",
+          "objective": "Attract, reassure and give a taste",
+          "price": {
+            "monthly": "Free",
+            "yearly": "Free"
+          },
+          "features": [
+            "3 free videos",
+            "Basic budget tracking",
+            "Access to public challenges",
+            "Limited AI assistance"
+          ]
+        },
+        "student": {
+          "name": "Student",
+          "target": "Students, universities",
+          "objective": "Support young people in financial management",
+          "price": {
+            "monthly": {
+              "cfa": "2,000 CFA",
+              "usd": "$3.50 USD"
+            },
+            "yearly": {
+              "cfa": "17,000 CFA",
+              "usd": "$28 USD"
+            }
+          },
+          "features": [
+            "Financial mini-courses",
+            "Campus budget simulator",
+            "Savings challenges",
+            "Study financing coaching"
+          ]
+        },
+        "entrepreneur": {
+          "name": "Entrepreneur",
+          "target": "Young entrepreneurs, SMEs",
+          "objective": "Help young entrepreneurs structure their finances",
+          "price": {
+            "monthly": {
+              "cfa": "3,000 CFA",
+              "usd": "$5.00 USD"
+            },
+            "yearly": {
+              "cfa": "25,000 CFA",
+              "usd": "$42 USD"
+            }
+          },
+          "features": [
+            "Financing modules",
+            "Business plan simulator",
+            "Cash flow tracking",
+            "Mentors & investors network"
+          ]
+        },
+        "premium": {
+          "name": "Premium",
+          "target": "Executives, professionals",
+          "objective": "Support executives and employees in wealth management",
+          "price": {
+            "monthly": {
+              "cfa": "5,000 CFA",
+              "usd": "$8.50 USD"
+            },
+            "yearly": {
+              "cfa": "45,000 CFA",
+              "usd": "$75 USD"
+            }
+          },
+          "features": [
+            "Complete budget and debt tracking",
+            "Retirement planning",
+            "Virtual advisor",
+            "Quarterly reports",
+            "Exclusive masterclasses"
+          ]
+        },
+        "b2g": {
+          "name": "B2G Education",
+          "target": "Ministries of education/finance, schools and universities",
+          "objective": "Are you a company/NGO that wants to support national financial education programs or add financial education to your CSR offering ?",
+          "price": {
+            "yearly": {
+              "cfa": "10 - 50 million CFA",
+              "usd": "$17,000 - $85,000 USD"
+            }
+          },
+          "features": [
+            "Educational modules",
+            "Teacher training",
+            "Free access via sponsored codes",
+            "Impact tracking"
+          ]
+        }
+      }
+    }
   },
   "beta": {
     "title": "BETA Consulting",

@@ -24,24 +24,24 @@ export function PartnersSection() {
       description: "Organisation internationale de jeunesse",
       website: "https://aiesec.org/"
     },
-    {
-      name: "CESAG",
-      logo: "/partners/cesag.png",
-      description: "Centre d'Études Supérieures de l'Afrique de Gestion",
-      website: "https://www.cesag.sn"
-    },
-    {
-      name: "CGF Bourse",
-      logo: "/partners/cgf-bourse.png",
-      description: "Courtage et gestion financière",
-      website: "https://www.cgfbourse.com/"
-    },
-    {
-      name: "EtriLabs",
-      logo: "/partners/etrilabs.webp",
-      description: "Laboratoire d'innovation technologique",
-      website: "https://etrilabs.com/"
-    },
+    // {
+    //   name: "CESAG",
+    //   logo: "/partners/cesag.png",
+    //   description: "Centre d'Études Supérieures de l'Afrique de Gestion",
+    //   website: "https://www.cesag.sn"
+    // },
+    // {
+    //   name: "CGF Bourse",
+    //   logo: "/partners/cgf-bourse.png",
+    //   description: "Courtage et gestion financière",
+    //   website: "https://www.cgfbourse.com/"
+    // },
+    // {
+    //   name: "EtriLabs",
+    //   logo: "/partners/etrilabs.webp",
+    //   description: "Laboratoire d'innovation technologique",
+    //   website: "https://etrilabs.com/"
+    // },
     {
       name: "Impact Hub",
       logo: "/partners/impact-hub.jpeg",
@@ -60,12 +60,12 @@ export function PartnersSection() {
       description: "Cabinet de conseil en stratégie",
       website: "https://www.nevgroupe.com/"
     },
-    {
-      name: "CIAI Vertes",
-      logo: "/partners/ciai.png",
-      description: "Entreprise écologique",
-      website: "https://www.ciaivertes.bj"
-    },
+    // {
+    //   name: "CIAI Vertes",
+    //   logo: "/partners/ciai.png",
+    //   description: "Entreprise écologique",
+    //   website: "https://www.ciaivertes.bj"
+    // },
   ]
 
   // Duplicate partners for seamless loop

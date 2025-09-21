@@ -4,21 +4,50 @@ import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { Card, CardContent } from "@/src/components/ui/card";
 import { useInView } from "@/src/hooks/use-in-view";
-import { Bot, GraduationCap, PencilRuler, Users } from "lucide-react";
+import {
+  Bot,
+  Check,
+  GraduationCap,
+  PencilRuler,
+  Users
+} from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export function FinEdSection() {
   const t = useTranslations("fined");
-  const { ref: sectionRef, isInView } = useInView<HTMLDivElement>({ threshold: 0.1 });
-  const { ref: headerRef, isInView: isHeaderInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
-  const { ref: contentRef, isInView: isContentInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
-  const { ref: phoneRef, isInView: isPhoneInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
+    "monthly"
+  );
+  const { ref: sectionRef, isInView } = useInView<HTMLDivElement>({
+    threshold: 0.1,
+  });
+  const { ref: headerRef, isInView: isHeaderInView } =
+    useInView<HTMLDivElement>({ threshold: 0.3 });
+  const { ref: contentRef, isInView: isContentInView } =
+    useInView<HTMLDivElement>({ threshold: 0.2 });
+  const { ref: phoneRef, isInView: isPhoneInView } = useInView<HTMLDivElement>({
+    threshold: 0.3,
+  });
+  const { ref: pricingRef, isInView: isPricingInView } =
+    useInView<HTMLDivElement>({ threshold: 0.1 });
+
+  const handleGetStarted = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   const features = [
     {
       icon: GraduationCap,
       titleKey: "education",
-      description: "Des modules interactifs et ludiques, conçus pour booster ton apprentissage et suivre tes avancées",
+      description:
+        "Des modules interactifs et ludiques, conçus pour booster ton apprentissage et suivre tes avancées",
     },
     {
       icon: PencilRuler,
@@ -56,22 +85,20 @@ export function FinEdSection() {
           }`}
         >
           <div className="flex-col gap-4 items-center justify-center mb-2 relative mx-auto">
-
-          <Badge
-            variant="secondary"
-            className="bg-primary/10 text-primary border-primary/20"
+            <Badge
+              variant="secondary"
+              className="bg-primary/10 text-primary border-primary/20"
             >
-            {t("subtitle")}
-          </Badge>
+              {t("subtitle")}
+            </Badge>
           </div>
-                    <div className="flex-col gap-4 items-center justify-center mb-4 relative mx-auto">
-
-          <Badge
-            variant="secondary"
-            className="mb-4 bg-primary/10 text-primary border-primary/20"
+          <div className="flex-col gap-4 items-center justify-center mb-4 relative mx-auto">
+            <Badge
+              variant="secondary"
+              className="mb-4 bg-primary/10 text-primary border-primary/20"
             >
-            {t("secondsubtitle")}
-          </Badge>
+              {t("secondsubtitle")}
+            </Badge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 text-balance leading-tight">
             {t("title")}
@@ -86,10 +113,7 @@ export function FinEdSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center mb-16 sm:mb-20">
           {/* Left Content with staggered animations */}
-          <div
-            ref={contentRef}
-            className="space-y-6 sm:space-y-8"
-          >
+          <div ref={contentRef} className="space-y-6 sm:space-y-8">
             {/* Features Grid */}
             <div className="grid gap-4 sm:gap-6">
               {features.map((feature, index) => {
@@ -164,7 +188,9 @@ export function FinEdSection() {
                     <div className="text-xs text-muted-foreground">
                       {t("downloadOn")}
                     </div>
-                    <div className="text-sm font-semibold">App Store</div>
+                    <div className="text-sm font-semibold text-muted-foreground">
+                      App Store
+                    </div>
                   </div>
                 </Button>
 
@@ -193,7 +219,9 @@ export function FinEdSection() {
                     <div className="text-xs text-muted-foreground">
                       {t("availableOn")}
                     </div>
-                    <div className="text-sm font-semibold">Google Play</div>
+                    <div className="text-sm font-semibold text-muted-foreground">
+                      Google Play
+                    </div>
                   </div>
                 </Button>
               </div>
@@ -222,15 +250,342 @@ export function FinEdSection() {
             </div>
 
             {/* Floating Elements - hide on mobile with enhanced animations */}
-            <div className={`hidden sm:block absolute -top-4 -left-4 w-16 sm:w-20 h-16 sm:h-20 bg-accent/20 rounded-full animate-pulse transition-all duration-1000 delay-700 ${
-              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
-            }`} />
-            <div className={`hidden sm:block absolute -bottom-6 -right-6 w-12 sm:w-16 h-12 sm:h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce transition-all duration-1000 delay-900 ${
-              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
-            }`} />
-            <div className={`hidden sm:block absolute top-1/3 -right-8 w-10 sm:w-12 h-10 sm:h-12 bg-secondary/30 rounded-full animate-pulse delay-1000 transition-all duration-1000 delay-1100 ${
-              isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
-            }`} />
+            <div
+              className={`hidden sm:block absolute -top-4 -left-4 w-16 sm:w-20 h-16 sm:h-20 bg-accent/20 rounded-full animate-pulse transition-all duration-1000 delay-700 ${
+                isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+              }`}
+            />
+            <div
+              className={`hidden sm:block absolute -bottom-6 -right-6 w-12 sm:w-16 h-12 sm:h-16 bg-primary/20 rounded-lg rotate-12 animate-bounce transition-all duration-1000 delay-900 ${
+                isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+              }`}
+            />
+            <div
+              className={`hidden sm:block absolute top-1/3 -right-8 w-10 sm:w-12 h-10 sm:h-12 bg-secondary/30 rounded-full animate-pulse delay-1000 transition-all duration-1000 delay-1100 ${
+                isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
+              }`}
+            />
+          </div>
+        </div>
+
+        {/* Pricing Section */}
+        <div
+          ref={pricingRef}
+          className={`mt-16 sm:mt-20 lg:mt-32 transition-all duration-1000 ${
+            isPricingInView
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
+          {/* Pricing Header */}
+          <div className="text-center mb-12 sm:mb-16">
+            <Badge
+              variant="secondary"
+              className="mb-4 bg-primary/10 text-primary border-primary/20"
+            >
+              {t("pricing.subtitle")}
+            </Badge>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">
+              {t("pricing.title")}
+            </h3>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+              {t("pricing.description")}
+            </p>
+
+            {/* Billing Toggle */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <span
+                className={`text-sm font-medium ${
+                  billingCycle === "monthly"
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {t("pricing.monthlyTitle")}
+              </span>
+              <button
+                onClick={() =>
+                  setBillingCycle(
+                    billingCycle === "monthly" ? "yearly" : "monthly"
+                  )
+                }
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
+                  billingCycle === "yearly" ? "bg-primary" : "bg-muted"
+                }`}
+              >
+                <span
+                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                    billingCycle === "yearly"
+                      ? "translate-x-6"
+                      : "translate-x-1"
+                  }`}
+                />
+              </button>
+              <span
+                className={`text-sm font-medium ${
+                  billingCycle === "yearly"
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {t("pricing.yearlyTitle")}
+              </span>
+            </div>
+          </div>
+
+          {/* Pricing Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
+            {/* Free Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+            >
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {t("pricing.packs.free.name")}
+                  </h4>
+                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                    {t("pricing.packs.free.price.monthly")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.free.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 4 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.free.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button variant="outline" className="w-full" onClick={handleGetStarted}>
+                    {t("pricing.getStarted")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Student Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: "100ms" }}
+            >
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {t("pricing.packs.student.name")}
+                  </h4>
+                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.student.price.monthly.cfa")
+                      : t("pricing.packs.student.price.yearly.cfa")}
+                    <span className="text-sm font-normal text-muted-foreground">
+                      {billingCycle === "monthly"
+                        ? t("pricing.monthly")
+                        : t("pricing.yearly")}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mb-2">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.student.price.monthly.usd")
+                      : t("pricing.packs.student.price.yearly.usd")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.student.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 4 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.student.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button className="w-full" onClick={handleGetStarted}>{t("pricing.askAQuote")}</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Entrepreneur Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: "200ms" }}
+            >
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {t("pricing.packs.entrepreneur.name")}
+                  </h4>
+                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.entrepreneur.price.monthly.cfa")
+                      : t("pricing.packs.entrepreneur.price.yearly.cfa")}
+                    <span className="text-sm font-normal text-muted-foreground">
+                      {billingCycle === "monthly"
+                        ? t("pricing.monthly")
+                        : t("pricing.yearly")}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mb-2">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.entrepreneur.price.monthly.usd")
+                      : t("pricing.packs.entrepreneur.price.yearly.usd")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.entrepreneur.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 4 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.entrepreneur.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button className="w-full" onClick={handleGetStarted}>
+                    {t("pricing.getStarted")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Premium Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: "300ms" }}
+            >
+              {/* Most Popular Badge */}
+              {/* <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-primary text-primary-foreground px-3 py-1 flex items-center space-x-1">
+                  <Star className="h-3 w-3" />
+                  <span className="text-xs font-medium">{t("pricing.mostPopular")}</span>
+                </Badge>
+              </div> */}
+
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {t("pricing.packs.premium.name")}
+                  </h4>
+                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.premium.price.monthly.cfa")
+                      : t("pricing.packs.premium.price.yearly.cfa")}
+                    <span className="text-sm font-normal text-muted-foreground">
+                      {billingCycle === "monthly"
+                        ? t("pricing.monthly")
+                        : t("pricing.yearly")}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mb-2">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.premium.price.monthly.usd")
+                      : t("pricing.packs.premium.price.yearly.usd")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.premium.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 5 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.premium.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button className="w-full bg-primary hover:bg-primary/90" onClick={handleGetStarted}>
+                    {t("pricing.getStarted")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* B2G Education Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: "400ms" }}
+            >
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {t("pricing.packs.b2g.name")}
+                  </h4>
+                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                    {t("pricing.packs.b2g.price.yearly.cfa")}
+                    <span className="text-sm font-normal text-muted-foreground">
+                      {t("pricing.yearly")}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mb-2">
+                    {t("pricing.packs.b2g.price.yearly.usd")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.b2g.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 4 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.b2g.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button className="w-full" onClick={handleGetStarted}>
+                    {t("pricing.askAQuote")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
