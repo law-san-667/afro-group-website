@@ -441,7 +441,7 @@ export function FinEdSection() {
             </Card>
  
             {/* Student Pack */}
-            <Card
+            {/* <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
                 isPricingInView
                   ? "opacity-100 translate-y-0"
@@ -454,24 +454,6 @@ export function FinEdSection() {
                   <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.student.name")}
                   </h4>
-                  {/* <div className="text-lg sm:text-xl font-bold text-primary mb-1">
-                    {billingCycle === "monthly"
-                      ? t("pricing.packs.student.price.monthly.cfa")
-                      : t("pricing.packs.student.price.yearly.cfa")}
-                    <span className="text-sm font-normal text-muted-foreground">
-                      {billingCycle === "monthly"
-                        ? t("pricing.monthly")
-                        : t("pricing.yearly")}
-                    </span>
-                  </div> */}
-                  {/* <div className="text-sm text-muted-foreground mb-2">
-                    {billingCycle === "monthly"
-                      ? t("pricing.packs.student.price.monthly.usd")
-                      : t("pricing.packs.student.price.yearly.usd")}
-                  </div> */}
-                  {/* <p className="text-sm text-primary italic text-muted-foreground">
-                    {t("pricing.askAQuote")}
-                  </p> */}
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.student.objective")}
                   </p>
@@ -492,7 +474,7 @@ export function FinEdSection() {
                   <Button className="w-full" onClick={handleGetStarted}>{t("pricing.askAQuote")}</Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Entrepreneur Pack */}
             <Card
@@ -548,7 +530,7 @@ export function FinEdSection() {
             </Card>
 
             {/* B2G Education Pack */}
-            <Card
+            {/* <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
                 isPricingInView
                   ? "opacity-100 translate-y-0"
@@ -561,15 +543,6 @@ export function FinEdSection() {
                   <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.b2g.name")}
                   </h4>
-                  {/* <div className="text-lg sm:text-xl font-bold text-primary mb-1">
-                    {t("pricing.packs.b2g.price.yearly.cfa")}
-                    <span className="text-sm font-normal text-muted-foreground">
-                      {t("pricing.yearly")}
-                    </span>
-                  </div> */}
-                  {/* <div className="text-sm text-primary italic text-muted-foreground mb-2">
-                    {t("pricing.askAQuote")}
-                  </div> */}
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.b2g.objective")}
                   </p>
@@ -592,7 +565,7 @@ export function FinEdSection() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
