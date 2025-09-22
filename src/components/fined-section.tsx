@@ -408,9 +408,9 @@ export function FinEdSection() {
                       ? t("pricing.packs.student.price.monthly.usd")
                       : t("pricing.packs.student.price.yearly.usd")}
                   </div> */}
-                  <p className="text-sm text-primary italic text-muted-foreground">
+                  {/* <p className="text-sm text-primary italic text-muted-foreground">
                     {t("pricing.askAQuote")}
-                  </p>
+                  </p> */}
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.student.objective")}
                   </p>
@@ -567,9 +567,9 @@ export function FinEdSection() {
                       {t("pricing.yearly")}
                     </span>
                   </div> */}
-                  <div className="text-sm text-primary italic text-muted-foreground mb-2">
+                  {/* <div className="text-sm text-primary italic text-muted-foreground mb-2">
                     {t("pricing.askAQuote")}
-                  </div>
+                  </div> */}
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.b2g.objective")}
                   </p>
