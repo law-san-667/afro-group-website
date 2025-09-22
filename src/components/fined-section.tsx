@@ -379,6 +379,67 @@ export function FinEdSection() {
               </CardContent>
             </Card>
 
+            {/* Premium Pack */}
+            <Card
+              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
+                isPricingInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: "300ms" }}
+            >
+              {/* Most Popular Badge */}
+              {/* <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-primary text-primary-foreground px-3 py-1 flex items-center space-x-1">
+                  <Star className="h-3 w-3" />
+                  <span className="text-xs font-medium">{t("pricing.mostPopular")}</span>
+                </Badge>
+              </div> */}
+
+              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
+                <div className="mb-6">
+                  <h4 className="text-md font-bold text-foreground mb-2">
+                    {t("pricing.packs.premium.name")}
+                  </h4>
+                  <div className="text-md sm:text-md font-bold text-primary mb-1">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.premium.price.monthly.cfa")
+                      : t("pricing.packs.premium.price.yearly.cfa")}
+                    <span className="text-sm font-normal text-muted-foreground">
+                      {billingCycle === "monthly"
+                        ? t("pricing.monthly")
+                        : t("pricing.yearly")}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground mb-2">
+                    {billingCycle === "monthly"
+                      ? t("pricing.packs.premium.price.monthly.usd")
+                      : t("pricing.packs.premium.price.yearly.usd")}
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {t("pricing.packs.premium.objective")}
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {Array.from({ length: 9 }, (_, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {t(`pricing.packs.premium.features.${index}`)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
+                  <Button className="w-full bg-primary hover:bg-primary/90" onClick={handleGetStarted}>
+                    {t("pricing.getStarted")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+ 
             {/* Student Pack */}
             <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
@@ -480,67 +541,6 @@ export function FinEdSection() {
 
                 <div className="mt-auto">
                   <Button className="w-full" onClick={handleGetStarted}>
-                    {t("pricing.getStarted")}
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Premium Pack */}
-            <Card
-              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
-                isPricingInView
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
-              style={{ transitionDelay: "300ms" }}
-            >
-              {/* Most Popular Badge */}
-              {/* <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-primary text-primary-foreground px-3 py-1 flex items-center space-x-1">
-                  <Star className="h-3 w-3" />
-                  <span className="text-xs font-medium">{t("pricing.mostPopular")}</span>
-                </Badge>
-              </div> */}
-
-              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
-                <div className="mb-6">
-                  <h4 className="text-md font-bold text-foreground mb-2">
-                    {t("pricing.packs.premium.name")}
-                  </h4>
-                  <div className="text-md sm:text-md font-bold text-primary mb-1">
-                    {billingCycle === "monthly"
-                      ? t("pricing.packs.premium.price.monthly.cfa")
-                      : t("pricing.packs.premium.price.yearly.cfa")}
-                    <span className="text-sm font-normal text-muted-foreground">
-                      {billingCycle === "monthly"
-                        ? t("pricing.monthly")
-                        : t("pricing.yearly")}
-                    </span>
-                  </div>
-                  <div className="text-sm text-muted-foreground mb-2">
-                    {billingCycle === "monthly"
-                      ? t("pricing.packs.premium.price.monthly.usd")
-                      : t("pricing.packs.premium.price.yearly.usd")}
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {t("pricing.packs.premium.objective")}
-                  </p>
-                </div>
-
-                <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 9 }, (_, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        {t(`pricing.packs.premium.features.${index}`)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-auto">
-                  <Button className="w-full bg-primary hover:bg-primary/90" onClick={handleGetStarted}>
                     {t("pricing.getStarted")}
                   </Button>
                 </div>
