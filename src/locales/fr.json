@@ -22,6 +22,8 @@
     "cta": "Découvrir nos solutions",
     "discoverFined": "Découvrir FinEd",
     "discoverBeta": "Découvrir BETA Consulting",
+    "finedSubtitle": "Éducation financière flexible via mobile",
+    "betaSubtitle": "Conseil stratégique et intégration IT",
     "learnMore": "En savoir plus"
   },
   "company": {
@@ -34,7 +36,7 @@
     "title": "FinEd",
     "subtitle": "Éducation financière digitale",
     "secondsubtitle": "Carrière d'avenir dans la finance",
-    "tagline": "Le Youtube de la finance",
+    "tagline": "Le Youtube de la Finance Africaine",
     "description": "FinEd, c'est bien plus qu'une application : une plateforme intelligente qui t'apprend à maîtriser ton argent tout en te donnant les outils digitaux pour gérer tes finances au quotidien.",
     "downloadText": "Téléchargez l'application :",
     "downloadOn": "Télécharger sur",
@@ -65,12 +67,12 @@
       "askAQuote": "Demander un devis",
       "packs": {
         "free": {
-          "name": "Gratuit",
+          "name": "Pack Gratuit",
           "target": "Grand public, nouveaux utilisateurs",
           "objective": "Attirer, rassurer et donner un avant-goût",
           "price": {
-            "monthly": "Gratuit",
-            "yearly": "Gratuit"
+            "monthly": "Gratuit dès maintenant sur l'application",
+            "yearly": "Gratuit dès maintenant sur l'application"
           },
           "features": [
             "3 vidéos gratuites",
@@ -80,7 +82,7 @@
           ]
         },
         "student": {
-          "name": "Étudiant",
+          "name": "Pack Étudiant",
           "target": "Étudiants, universités",
           "objective": "Vous êtes une école qui reconnaissez la valeur de l'éducation financière pour vos étudiants ?",
           "price": {
@@ -101,7 +103,7 @@
           ]
         },
         "entrepreneur": {
-          "name": "Entrepreneur",
+          "name": "Pack Entrepreneur",
           "target": "Jeunes entrepreneurs, TPE/PME",
           "objective": "Aider les jeunes entrepreneurs à structurer leurs finances",
           "price": {
@@ -122,29 +124,33 @@
           ]
         },
         "premium": {
-          "name": "Premium",
-          "target": "Cadres, professions libérales",
-          "objective": "Accompagner les cadres et salariés dans leur gestion patrimoniale",
+          "name": "Pack XamXam",
+          "target": "Grand public",
+          "objective": "Accès complet à l'éducation financière pour tous",
           "price": {
             "monthly": {
-              "cfa": "5 000 FCFA",
-              "usd": "8.50 USD"
+              "cfa": "1 500 FCFA",
+              "usd": "≈ 2.50 USD"
             },
             "yearly": {
-              "cfa": "45 000 FCFA",
-              "usd": "75 USD"
+              "cfa": "12 000 FCFA",
+              "usd": "≈ 20 USD"
             }
           },
           "features": [
-            "Suivi complet budget et dettes",
-            "Planification retraite",
-            "Conseiller virtuel",
-            "Rapports trimestriels",
-            "Masterclass exclusives"
+            "Accès complet aux 15 vidéos",
+            "Suivi budgétaire avancé",
+            "Rapports mensuels",
+            "IA illimitée",
+            "Challenges et badges",
+            "Rapports détaillés",
+            "Webinaires",
+            "Mini-cours",
+            "Offres partenaires"
           ]
         },
         "b2g": {
-          "name": "B2G Éducation Financière Jeunes",
+          "name": "Pack Inclusion Financière",
           "target": "Ministères éducation/finances, écoles et universités",
           "objective": "Vous êtes une entreprise/ONG qui souhaitez soutenir les programmes nationaux d’éducation financière  ou ajouter l'éducation financière à votre offre RSE ?",
           "price": {

@@ -345,10 +345,10 @@ export function FinEdSection() {
             >
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-foreground mb-2">
+                  <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.free.name")}
                   </h4>
-                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                  <div className="text-md sm:text-md font-bold text-primary mb-1">
                     {t("pricing.packs.free.price.monthly")}
                   </div>
                   <p className="text-sm text-muted-foreground">
@@ -368,7 +368,11 @@ export function FinEdSection() {
                 </ul>
 
                 <div className="mt-auto">
-                  <Button variant="outline" className="w-full" onClick={handleGetStarted}>
+                  <Button 
+                    variant="outline" 
+                    className="w-full" 
+                    onClick={() => window.open("https://onelink.to/akekfv", "_blank")}
+                  >
                     {t("pricing.getStarted")}
                   </Button>
                 </div>
@@ -386,10 +390,10 @@ export function FinEdSection() {
             >
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-foreground mb-2">
+                  <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.student.name")}
                   </h4>
-                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                  {/* <div className="text-lg sm:text-xl font-bold text-primary mb-1">
                     {billingCycle === "monthly"
                       ? t("pricing.packs.student.price.monthly.cfa")
                       : t("pricing.packs.student.price.yearly.cfa")}
@@ -398,12 +402,15 @@ export function FinEdSection() {
                         ? t("pricing.monthly")
                         : t("pricing.yearly")}
                     </span>
-                  </div>
-                  <div className="text-sm text-muted-foreground mb-2">
+                  </div> */}
+                  {/* <div className="text-sm text-muted-foreground mb-2">
                     {billingCycle === "monthly"
                       ? t("pricing.packs.student.price.monthly.usd")
                       : t("pricing.packs.student.price.yearly.usd")}
-                  </div>
+                  </div> */}
+                  <p className="text-sm text-primary italic text-muted-foreground">
+                    {t("pricing.askAQuote")}
+                  </p>
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.student.objective")}
                   </p>
@@ -437,10 +444,10 @@ export function FinEdSection() {
             >
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-foreground mb-2">
+                  <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.entrepreneur.name")}
                   </h4>
-                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                  <div className="text-md sm:text-md font-bold text-primary mb-1">
                     {billingCycle === "monthly"
                       ? t("pricing.packs.entrepreneur.price.monthly.cfa")
                       : t("pricing.packs.entrepreneur.price.yearly.cfa")}
@@ -498,10 +505,10 @@ export function FinEdSection() {
 
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-foreground mb-2">
+                  <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.premium.name")}
                   </h4>
-                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                  <div className="text-md sm:text-md font-bold text-primary mb-1">
                     {billingCycle === "monthly"
                       ? t("pricing.packs.premium.price.monthly.cfa")
                       : t("pricing.packs.premium.price.yearly.cfa")}
@@ -522,7 +529,7 @@ export function FinEdSection() {
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 5 }, (_, index) => (
+                  {Array.from({ length: 9 }, (_, index) => (
                     <li key={index} className="flex items-start space-x-3">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
@@ -551,17 +558,17 @@ export function FinEdSection() {
             >
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-foreground mb-2">
+                  <h4 className="text-md font-bold text-foreground mb-2">
                     {t("pricing.packs.b2g.name")}
                   </h4>
-                  <div className="text-lg sm:text-xl font-bold text-primary mb-1">
+                  {/* <div className="text-lg sm:text-xl font-bold text-primary mb-1">
                     {t("pricing.packs.b2g.price.yearly.cfa")}
                     <span className="text-sm font-normal text-muted-foreground">
                       {t("pricing.yearly")}
                     </span>
-                  </div>
-                  <div className="text-sm text-muted-foreground mb-2">
-                    {t("pricing.packs.b2g.price.yearly.usd")}
+                  </div> */}
+                  <div className="text-sm text-primary italic text-muted-foreground mb-2">
+                    {t("pricing.askAQuote")}
                   </div>
                   <p className="text-sm text-muted-foreground">
                     {t("pricing.packs.b2g.objective")}

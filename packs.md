@@ -51,3 +51,17 @@ Contenu:
 - accès gratuit via codes sponsorisés, 
 - suivi impact
 Tarifs: 10 – 50 millions / an (CFA) & 17.000 – 85.000 / an (USD)
+
+Pack XamXam (Grand public)
+Cible: Grand public
+Contenu: 
+- Accès complet aux 15 vidéos, 
+- suivi budgétaire avancé, 
+- rapports mensuels, 
+- IA illimitée, 
+- challenges et badges
+- Tout le contenu mensuel + rapports détaillés, 
+- webinaires, 
+- mini-cours, 
+- offres partenaires 
+Tarifs: 1 500 / mois ou ≈ 2.5 / mois || 12 000 / an ou ≈ 20 / an

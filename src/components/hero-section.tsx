@@ -118,31 +118,43 @@ export function HeroSection() {
 
           {/* CTA Buttons - Better mobile layout */}
           <div
-            className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center transition-all duration-1000 delay-600 ${
+            className={`flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center transition-all duration-1000 delay-600 ${
               isLoaded
                 ? "translate-y-0 opacity-100 scale-100"
                 : "translate-y-12 opacity-0 scale-95"
             }`}
           >
-            <Button
-              size="lg"
-              onClick={handleScrollToFinEd}
-              style={{ backgroundColor: "#10493F" }}
-              className="w-full sm:w-auto hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/25"
-            >
-              {t("discoverFined")}
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            {/* FinEd Button with Subtitle */}
+            <div className="text-center">
+              <Button
+                size="lg"
+                onClick={handleScrollToFinEd}
+                style={{ backgroundColor: "#10493F" }}
+                className="w-full sm:w-auto hover:bg-accent/90 text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/25 mb-2"
+              >
+                {t("discoverFined")}
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+              <p className="text-sm text-white/90 max-w-48 mx-auto leading-relaxed">
+                {t("finedSubtitle")}
+              </p>
+            </div>
 
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={handleScrollToBeta}
-              className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
-            >
-              {t("discoverBeta")}
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            {/* BETA Button with Subtitle */}
+            <div className="text-center">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={handleScrollToBeta}
+                className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold group bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 mb-2"
+              >
+                {t("discoverBeta")}
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+              <p className="text-sm text-white/90 max-w-48 mx-auto leading-relaxed">
+                {t("betaSubtitle")}
+              </p>
+            </div>
           </div>
         </div>
       </div>

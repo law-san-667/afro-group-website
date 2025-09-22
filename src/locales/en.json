@@ -20,6 +20,10 @@
     "subtitle": "Your trusted partner in building sustainable economic sovereignty in Africa.",
     "description": "We develop cutting-edge technological solutions to promote financial inclusion and support the adoption of emerging technologies, serving Africa’s integrated and sustainable development.",
     "cta": "Discover Our Solutions",
+    "discoverFined": "Discover FinEd",
+    "discoverBeta": "Discover BETA Consulting",
+    "finedSubtitle": "Flexible financial education via mobile",
+    "betaSubtitle": "Strategic consulting and IT integration",
     "learnMore": "Learn More"
   },
   "company": {
@@ -32,7 +36,7 @@
     "title": "FinEd",
     "subtitle": "Financial Literacy",
     "secondsubtitle": "Emerging careers in finance",
-    "tagline": "Future Careers in Finance",
+    "tagline": "The YouTube of African Finance",
     "description": "FinEd is more than just an app: it’s an intelligent platform that teaches you to master your money while giving you the digital tools to manage your finances every day.",
     "downloadText": "Download the app:",
     "downloadOn": "Download on",
@@ -63,12 +67,12 @@
       "askAQuote": "Ask for a Quote",
       "packs": {
         "free": {
-          "name": "Free",
+          "name": "Free Pack",
           "target": "General public, new users",
           "objective": "Attract, reassure and give a taste",
           "price": {
-            "monthly": "Free",
-            "yearly": "Free"
+            "monthly": "Available right now on the app ",
+            "yearly": "Available right now on the app "
           },
           "features": [
             "3 free videos",
@@ -78,7 +82,7 @@
           ]
         },
         "student": {
-          "name": "Student",
+          "name": "Student Pack",
           "target": "Students, universities",
           "objective": "Support young people in financial management",
           "price": {
@@ -99,7 +103,7 @@
           ]
         },
         "entrepreneur": {
-          "name": "Entrepreneur",
+          "name": "Entrepreneur Pack",
           "target": "Young entrepreneurs, SMEs",
           "objective": "Help young entrepreneurs structure their finances",
           "price": {
@@ -120,29 +124,33 @@
           ]
         },
         "premium": {
-          "name": "Premium",
-          "target": "Executives, professionals",
-          "objective": "Support executives and employees in wealth management",
+          "name": "XamXam Pack",
+          "target": "General public",
+          "objective": "Complete access to financial education for everyone",
           "price": {
             "monthly": {
-              "cfa": "5,000 CFA",
-              "usd": "$8.50 USD"
+              "cfa": "1,500 CFA",
+              "usd": "≈ $2.50 USD"
             },
             "yearly": {
-              "cfa": "45,000 CFA",
-              "usd": "$75 USD"
+              "cfa": "12,000 CFA",
+              "usd": "≈ $20 USD"
             }
           },
           "features": [
-            "Complete budget and debt tracking",
-            "Retirement planning",
-            "Virtual advisor",
-            "Quarterly reports",
-            "Exclusive masterclasses"
+            "Full access to 15 videos",
+            "Advanced budget tracking",
+            "Monthly reports",
+            "Unlimited AI",
+            "Challenges and badges",
+            "Detailed reports",
+            "Webinars",
+            "Mini-courses",
+            "Partner offers"
           ]
         },
         "b2g": {
-          "name": "B2G Education",
+          "name": "Pack Financial Inclusion",
           "target": "Ministries of education/finance, schools and universities",
           "objective": "Are you a company/NGO that wants to support national financial education programs or add financial education to your CSR offering ?",
           "price": {
