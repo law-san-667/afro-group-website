@@ -334,7 +334,7 @@ export function FinEdSection() {
           </div>
 
           {/* Pricing Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-7xl mx-auto">
             {/* Free Pack */}
             <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
@@ -433,7 +433,14 @@ export function FinEdSection() {
                 </ul>
 
                 <div className="mt-auto">
-                  <Button className="w-full bg-primary hover:bg-primary/90" onClick={handleGetStarted}>
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90" 
+                    onClick={() => {
+                      const locale = window.location.pathname.split('/')[1] || 'fr';
+                      const period = billingCycle === 'monthly' ? 'm' : 'y';
+                      window.location.href = `/${locale}/payment/2/${period}`;
+                    }}
+                  >
                     {t("pricing.getStarted")}
                   </Button>
                 </div>
@@ -522,7 +529,14 @@ export function FinEdSection() {
                 </ul>
 
                 <div className="mt-auto">
-                  <Button className="w-full" onClick={handleGetStarted}>
+                  <Button 
+                    className="w-full" 
+                    onClick={() => {
+                      const locale = window.location.pathname.split('/')[1] || 'fr';
+                      const period = billingCycle === 'monthly' ? 'm' : 'y';
+                      window.location.href = `/${locale}/payment/3/${period}`;
+                    }}
+                  >
                     {t("pricing.getStarted")}
                   </Button>
                 </div>

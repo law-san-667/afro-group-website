@@ -8,6 +8,18 @@ const intlMiddleware = createMiddleware({
 });
 
 export default function middleware(request: NextRequest) {
+  // Check for authentication on payment pages
+  if (request.nextUrl.pathname.match(/^\/[a-z]{2}\/payment\/\d+\/[my]$/)) {
+    const accessToken = request.cookies.get("accessToken");
+    const refreshToken = request.cookies.get("refreshToken");
+    
+    // If no auth cookies, redirect to login page
+    if (!accessToken || !refreshToken) {
+      const loginUrl = new URL(request.nextUrl.pathname + "/login", request.url);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   // Redirect /cgu to /<locale>/cgu
   if (request.nextUrl.pathname === "/cgu") {
     // You can detect the user's preferred locale here, or use default
@@ -37,7 +49,8 @@ export const config = {
     "/",
     "/cgu",
     "/blog/:path*",
-    "/(en|fr)/:path*"
+    "/(en|fr)/:path*",
+    "/(en|fr)/payment/:path*"
     // Add any additional routes you want to match here
   ],
 };

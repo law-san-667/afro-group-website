@@ -11,115 +11,115 @@
     "name": "Partenaires",
     "title": "Ils nous font confiance",
     "subtitle": "Nos partenaires de confiance qui nous accompagnent dans notre mission de transformation digitale de l'Afrique.",
-    "cta": "Devenir partenaire",
+    "cta": "Devenir Partenaire",
     "wantToBePartner": "Vous souhaitez devenir partenaire ?",
-    "contactUs": "Nous contacter"
+    "contactUs": "Nous Contacter"
   },
   "hero": {
     "title": "African Financial Resources and Optimization",
-    "subtitle": "Votre partenaire de confiance pour bâtir une souveraineté économique durable en Afrique.",
-    "description": "Nous developpons des solutions technologiques de pointe pour favoriser l'inclusion financière et accompagner l'adoption des technologies émergentes, au service d'un développement intégré et durable de l'Afrique.",
-    "cta": "Découvrir nos solutions",
+    "subtitle": "Votre partenaire de confiance pour construire une souveraineté économique durable en Afrique.",
+    "description": "Nous développons des solutions technologiques de pointe pour promouvoir l'inclusion financière et soutenir l'adoption des technologies émergentes, au service du développement intégré et durable de l'Afrique.",
+    "cta": "Découvrir Nos Solutions",
     "discoverFined": "Découvrir FinEd",
     "discoverBeta": "Découvrir BETA Consulting",
     "finedSubtitle": "Éducation financière flexible via mobile",
     "betaSubtitle": "Conseil stratégique et intégration IT",
-    "learnMore": "En savoir plus"
+    "learnMore": "En Savoir Plus"
   },
   "company": {
     "title": "Notre Mission",
     "description": "AFRO Group est une entreprise technologique dédiée à l'innovation financière et éducative en Afrique. Nous créons des solutions qui transforment la façon dont les Africains accèdent aux services financiers et à l'éducation.",
     "vision": "Notre Vision",
-    "visionText": "Devenir le leader de l'innovation technologique en Afrique, en créant un écosystème financier et éducatif inclusif et accessible à tous."
+    "visionText": "Devenir le leader africain de l'innovation technologique en construisant un écosystème financier et éducatif inclusif et accessible."
   },
   "fined": {
     "title": "FinEd",
-    "subtitle": "Éducation financière digitale",
-    "secondsubtitle": "Carrière d'avenir dans la finance",
-    "tagline": "Le Youtube de la Finance Africaine",
-    "description": "FinEd, c'est bien plus qu'une application : une plateforme intelligente qui t'apprend à maîtriser ton argent tout en te donnant les outils digitaux pour gérer tes finances au quotidien.",
-    "downloadText": "Téléchargez l'application :",
+    "subtitle": "Éducation Financière",
+    "secondsubtitle": "Métiers émergents de la finance",
+    "tagline": "Le YouTube de la Finance Africaine",
+    "description": "FinEd est plus qu'une simple application : c'est une plateforme intelligente qui vous apprend à maîtriser votre argent tout en vous donnant les outils numériques pour gérer vos finances au quotidien.",
+    "downloadText": "Télécharger l'app :",
     "downloadOn": "Télécharger sur",
     "availableOn": "Disponible sur",
     "features": {
       "education": "Modules éducatifs et ludiques",
-      "tools": "Outils financiers accessibles",
-      "community": "Communauté d'apprentissage dynamique",
-      "ai": "Assistant virtuel IA"
+      "tools": "Outils Financiers Accessibles",
+      "community": "Communauté d'Apprentissage Dynamique",
+      "ai": "Assistant Virtuel IA"
     },
     "featuresDescription": {
-      "education": "Des modules interactifs couvrant les bases de la gestion financière, l'investissement, l'épargne et plus encore.",
-      "tools": "Des outils pratiques pour suivre vos dépenses, établir des budgets et planifier vos objectifs financiers.",
-      "community": "Rejoignez une communauté d'apprenants pour partager des conseils, poser des questions et progresser ensemble.",
-      "ai": "Un assistant virtuel alimenté par l'IA pour répondre à vos questions financières et vous guider dans votre apprentissage."
+      "education": "Modules interactifs couvrant les bases de la gestion financière, l'investissement, l'épargne, et plus encore.",
+      "tools": "Outils pratiques pour suivre les dépenses, créer des budgets et planifier des objectifs financiers.",
+      "community": "Rejoignez une communauté d'apprenants pour partager des conseils, poser des questions et grandir ensemble.",
+      "ai": "Un assistant virtuel alimenté par l'IA pour répondre à vos questions financières et guider votre apprentissage."
     },
     "cta": "Découvrir FinEd",
     "pricing": {
       "title": "Nos Formules",
-      "subtitle": "Choisissez le plan qui vous convient",
-      "description": "Des solutions adaptées à chaque profil pour maîtriser vos finances et construire votre avenir financier.",
+      "subtitle": "Choisissez la formule qui vous convient",
+      "description": "Des solutions adaptées à chaque profil pour maîtriser ses finances et construire son avenir financier.",
       "monthly": "/ mois",
       "yearly": "/ an",
       "monthlyTitle": "Mensuel",
       "yearlyTitle": "Annuel",
-      "mostPopular": "Plus populaire",
+      "mostPopular": "Le Plus Populaire",
       "getStarted": "Commencer",
-      "askAQuote": "Demander un devis",
+      "askAQuote": "Demander un Devis",
       "packs": {
         "free": {
           "name": "Pack Gratuit",
           "target": "Grand public, nouveaux utilisateurs",
-          "objective": "Attirer, rassurer et donner un avant-goût",
+          "objective": "Attirer, rassurer et donner le goût",
           "price": {
-            "monthly": "Gratuit dès maintenant sur l'application",
-            "yearly": "Gratuit dès maintenant sur l'application"
+            "monthly": "Disponible dès maintenant sur l'app ",
+            "yearly": "Disponible dès maintenant sur l'app "
           },
           "features": [
             "vidéos gratuites",
-            "Suivi budgétaire basique",
-            "Accès challenges publics",
+            "Suivi budgétaire de base",
+            "Accès aux défis publics",
             "Assistance IA limitée"
           ]
         },
         "student": {
           "name": "Pack Étudiant",
           "target": "Étudiants, universités",
-          "objective": "Vous êtes une école qui reconnaissez la valeur de l'éducation financière pour vos étudiants ?",
+          "objective": "Accompagner les jeunes dans la gestion financière",
           "price": {
             "monthly": {
-              "cfa": "2 000 FCFA",
-              "usd": "3.50 USD"
+              "cfa": "2 000 CFA",
+              "usd": "3,50 USD"
             },
             "yearly": {
-              "cfa": "17 000 FCFA",
+              "cfa": "17 000 CFA",
               "usd": "28 USD"
             }
           },
           "features": [
             "Mini-cours financiers",
-            "Simulateur budget campus",
-            "Challenges épargne",
+            "Simulateur de budget campus",
+            "Défis d'épargne",
             "Coaching financement études"
           ]
         },
         "entrepreneur": {
           "name": "Pack Entrepreneur",
-          "target": "Jeunes entrepreneurs, TPE/PME",
+          "target": "Jeunes entrepreneurs, PME",
           "objective": "Aider les jeunes entrepreneurs à structurer leurs finances",
           "price": {
             "monthly": {
-              "cfa": "3 000 FCFA",
-              "usd": "5.00 USD"
+              "cfa": "3 000 CFA",
+              "usd": "5,00 USD"
             },
             "yearly": {
-              "cfa": "25 000 FCFA",
+              "cfa": "25 000 CFA",
               "usd": "42 USD"
             }
           },
           "features": [
-            "Modules financement",
-            "Simulateur business plan",
-            "Suivi cashflow",
+            "Modules de financement",
+            "Simulateur de business plan",
+            "Suivi de trésorerie",
             "Réseau mentors & investisseurs"
           ]
         },
@@ -129,11 +129,11 @@
           "objective": "Accès complet à l'éducation financière pour tous",
           "price": {
             "monthly": {
-              "cfa": "1 500 FCFA",
-              "usd": "≈ 2.50 USD"
+              "cfa": "1 500 CFA",
+              "usd": "≈ 2,50 USD"
             },
             "yearly": {
-              "cfa": "12 000 FCFA",
+              "cfa": "12 000 CFA",
               "usd": "≈ 20 USD"
             }
           },
@@ -142,7 +142,7 @@
             "Suivi budgétaire avancé",
             "Rapports mensuels",
             "IA illimitée",
-            "Challenges et badges",
+            "Défis et badges",
             "Rapports détaillés",
             "Webinaires",
             "Mini-cours",
@@ -152,18 +152,18 @@
         "b2g": {
           "name": "Pack Inclusion Financière",
           "target": "Ministères éducation/finances, écoles et universités",
-          "objective": "Vous êtes une entreprise/ONG qui souhaitez soutenir les programmes nationaux d’éducation financière  ou ajouter l'éducation financière à votre offre RSE ?",
+          "objective": "Vous êtes une entreprise/ONG qui veut soutenir les programmes nationaux d'éducation financière ou ajouter l'éducation financière à votre offre RSE ?",
           "price": {
             "yearly": {
-              "cfa": "10 - 50 millions FCFA",
+              "cfa": "10 - 50 millions CFA",
               "usd": "17 000 - 85 000 USD"
             }
           },
           "features": [
-            "Modules pédagogiques",
-            "Formation enseignants",
+            "Modules éducatifs",
+            "Formation des formateurs",
             "Accès gratuit via codes sponsorisés",
-            "Suivi impact"
+            "Suivi d'impact"
           ]
         }
       }
@@ -171,57 +171,57 @@
   },
   "beta": {
     "title": "BETA Consulting",
-    "seeMore": "En savoir plus sur BETA Consulting",
-    "subtitle": "Conseil en transformation digitale",
-    "description": "BETA Consulting conseille et guide les entreprises et institutions dans leur transformation digitale via la blockchain, en offrant une expertise pointue dans les secteurs financiers, logistiques et administratifs.",
+    "seeMore": "En Savoir Plus sur BETA Consulting",
+    "subtitle": "Conseil en Transformation Digitale",
+    "description": "BETA Consulting conseille et accompagne les entreprises et institutions dans leur transformation digitale par la blockchain, en apportant une expertise poussée dans les secteurs financiers, logistiques et administratifs.",
     "services": {
-      "training": "Formation et accompagnement",
-      "strategy": "Conseil en stratégie",
-      "implementation": "Développement de solutions"
+      "training": "Formation & Accompagnement",
+      "strategy": "Conseil Stratégique",
+      "implementation": "Développement de Solutions"
     },
     "servicesDescription": {
-      "implementation": "Développement de solutions IT Blockchain adaptées à vos réalités.",
-      "training": "Seminaires professionnels et formation de vos équipes ",
-      "strategy": "Accompagnement et conseil en stratégie blockchain."
+      "implementation": "Développement de solutions IT blockchain adaptées à vos besoins.",
+      "training": "Séminaires professionnels et formations pour vos équipes.",
+      "strategy": "Orientation et conseil en stratégie blockchain."
     },
-    "footer": "Explorez comment BETA Consulting peut transformer votre entreprise grâce à l'expertise blockchain.",
-    "cta": "Nos services conseil"
+    "footer": "Découvrez comment BETA Consulting peut transformer votre entreprise avec l'expertise blockchain.",
+    "cta": "Nos Services de Conseil"
   },
   "impact": {
     "title": "Notre Impact",
-    "users": "Utilisateurs actifs",
-    "countries": "Pays couverts",
+    "users": "Utilisateurs Actifs",
+    "countries": "Pays Couverts",
     "partners": "Partenaires",
-    "transactions": "Transactions traitées"
+    "transactions": "Transactions Traitées"
   },
   "blog": {
     "title": "Actualités & Insights",
     "subtitle": "Restez informé des dernières tendances",
-    "readMore": "Lire la suite",
-    "viewAll": "Voir tous les articles"
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tous les Articles"
   },
   "contact": {
-    "title": "Contactez-nous",
-    "subtitle": "Vous êtes une entreprise ou une institution et souhaitez collaborer, contribuer ou bénéficier de nos solutions innovantes ? Contactez-nous dès aujourd'hui et construisons ensemble des projets à fort impact pour l'Afrique.",
-    "name": "Nom complet",
-    "email": "Adresse email",
-    "sendUsAMessage": "Envoyez-nous un message",
+    "title": "Nous Contacter",
+    "subtitle": "Vous êtes une entreprise ou une institution souhaitant collaborer, contribuer ou bénéficier de nos solutions innovantes ? Contactez-nous dès aujourd'hui et construisons ensemble des projets impactants pour l'Afrique.",
+    "name": "Nom Complet",
+    "email": "Adresse Email",
+    "sendUsAMessage": "Envoyez-nous un Message",
     "subject": "Sujet",
     "message": "Message",
-    "send": "Envoyer le message",
-    "sending": "Envoi en cours...",
+    "send": "Envoyer le Message",
+    "sending": "Envoi...",
     "success": "Message envoyé avec succès !",
-    "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "error": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
     "contactInfo": {
-      "title": "Informations de contact",
+      "title": "Informations de Contact",
       "address": "Adresse",
       "phone": "Téléphone",
       "email": "Email"
     }
   },
   "footer": {
-    "description": "AFRO Group - Transformer l'avenir de l'Afrique grâce à la finance, la technologie et l'éducation.",
-    "quickLinks": "Liens rapides",
+    "description": "AFRO Group - Façonner l'avenir de l'Afrique grâce à la finance, la technologie et l'éducation.",
+    "quickLinks": "Liens Rapides",
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
@@ -229,5 +229,91 @@
     "partners": "Partenaires",
     "followUs": "Suivez-nous",
     "rights": "Tous droits réservés"
+  },
+  "login": {
+    "backToHome": "Retour à l'Accueil",
+    "signIn": "Se Connecter",
+    "verifyEmail": "Vérifiez Votre Email",
+    "enterEmailToContinue": "Entrez votre email pour continuer vers le paiement",
+    "enterCodeSentTo": "Entrez le code à 6 chiffres envoyé à",
+    "emailAddress": "Adresse Email",
+    "emailPlaceholder": "votre@email.com",
+    "pleaseEnterEmail": "Veuillez entrer votre email",
+    "sendingCode": "Envoi du Code...",
+    "sendVerificationCode": "Envoyer le Code de Vérification",
+    "verificationCode": "Code de Vérification",
+    "codePlaceholder": "000000",
+    "pleaseEnterCode": "Veuillez entrer le code à 6 chiffres",
+    "verifying": "Vérification...",
+    "verifyCode": "Vérifier le Code",
+    "loginSuccessful": "Connexion Réussie !",
+    "redirectingToPayment": "Redirection vers la page de paiement...",
+    "continueToPayment": "Continuer vers le Paiement",
+    "resendCode": "Renvoyer le Code",
+    "remaining": "restant",
+    "resendAvailableIn": "Renvoi disponible dans",
+    "maximumResendReached": "Nombre maximum de renvois atteint",
+    "changeEmail": "Changer l'Email",
+    "tooManyAttempts": "Trop de tentatives échouées. Veuillez recommencer.",
+    "invalidCodeRemaining": "Code invalide. {count} tentatives restantes.",
+    "networkError": "Erreur réseau. Veuillez réessayer.",
+    "failedToSend": "Échec de l'envoi du code de vérification",
+    "failedToResend": "Échec du renvoi du code",
+    "maximumResendAttempts": "Nombre maximum de tentatives de renvoi atteint",
+    "noAccountYet": "Vous n'avez pas encore de compte FinEd ?",
+    "downloadAppDescription": "Téléchargez l'application FinEd pour créer votre compte et commencer votre parcours d'éducation financière.",
+    "downloadFinEdApp": "Télécharger l'App FinEd"
+  },
+  "payment": {
+    "welcome": "Bienvenue",
+    "useAnotherAccount": "Utiliser un Autre Compte",
+    "completeYourPurchase": "Finaliser Votre Achat",
+    "monthlySubscription": "Abonnement mensuel",
+    "yearlySubscription": "Abonnement annuel",
+    "packageBenefits": "Avantages du Forfait",
+    "total": "Total",
+    "perMonth": "par mois",
+    "perYear": "par an",
+    "packageChangeNotice": "Avis de Changement de Forfait",
+    "currentPackageWarning": "Vous avez actuellement le forfait {packageName}. L'achat de ce nouveau forfait remplacera votre abonnement actuel.",
+    "choosePaymentMethod": "Choisir la Méthode de Paiement",
+    "selectPaymentOption": "Sélectionnez votre option de paiement préférée",
+    "wave": "Wave",
+    "orangeMoney": "Orange Money",
+    "mobileMoney": "Mobile Money",
+    "cardPayment": "Paiement par Carte",
+    "visaMastercard": "Visa, Mastercard",
+    "securePaymentProcessing": "Traitement sécurisé des paiements",
+    "packageNotFound": "Forfait introuvable",
+    "failedToLoadPackage": "Échec du chargement des informations du forfait",
+    "goBack": "Retour",
+    "paymentProcessing": "Le paiement avec {method} serait traité ici",
+    "paymentFailed": "Le paiement a échoué. Veuillez réessayer.",
+    "success": {
+      "title": "Paiement Réussi !",
+      "subtitle": "Merci pour votre achat",
+      "description": "Votre abonnement a été activé avec succès. Vous pouvez maintenant profiter de tous les avantages de votre forfait choisi.",
+      "orderNumber": "Numéro de Commande",
+      "packageActivated": "Forfait Activé",
+      "validUntil": "Valide Jusqu'au",
+      "backToApp": "Retour à l'App",
+      "downloadApp": "Télécharger FinEd",
+      "continueJourney": "Continuez votre parcours d'éducation financière avec FinEd"
+    },
+    "fail": {
+      "title": "Échec du Paiement",
+      "subtitle": "Un problème est survenu avec votre paiement",
+      "description": "Ne vous inquiétez pas, aucun frais n'a été prélevé sur votre compte. Veuillez réessayer ou contacter le support si le problème persiste.",
+      "commonReasons": "Raisons courantes d'échec de paiement :",
+      "reasons": [
+        "Fonds insuffisants",
+        "Carte expirée ou bloquée",
+        "Problèmes de connexion réseau",
+        "Restrictions de sécurité bancaire"
+      ],
+      "tryAgain": "Réessayer",
+      "contactSupport": "Contacter le Support",
+      "backToPayment": "Retour au Paiement"
+    }
   }
 }
