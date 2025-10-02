@@ -206,9 +206,9 @@ export function BetaConsultingSection() {
             >
               {tSdg("alignedWith")}
             </Badge>
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-4">
+            {/* <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-4">
               {tSdg("title")}
-            </h3>
+            </h3> */}
           </div>
           
           <div className="flex justify-center gap-6 sm:gap-8">
@@ -217,7 +217,7 @@ export function BetaConsultingSection() {
                 key={goalNumber}
                 className="group relative"
               >
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 cursor-pointer">
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 cursor-pointer">
                   <img
                     src={`/odd/F-WEB-Goal-${goalNumber.toString().padStart(2, '0')}.png`}
                     alt={`ODD ${goalNumber}`}

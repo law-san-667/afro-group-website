@@ -278,14 +278,13 @@ export function FinEdSection() {
             >
               {tSdg("alignedWith")}
             </Badge>
-            <h3 className="text-lg sm:text-xl font-semibold text-muted-foreground mb-4">
+            {/* <h3 className="text-lg sm:text-xl font-semibold text-muted-foreground mb-4">
               {tSdg("title")}
-            </h3>
+            </h3> */}
           </div>
           
-          <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-17 gap-2 sm:gap-3 lg:gap-4 max-w-6xl mx-auto justify-items-center">
-            {Array.from({ length: 17 }, (_, index) => {
-              const goalNumber = index + 1;
+          <div className="flex justify-center gap-6 sm:gap-8">
+            {[1, 4, 8, 10, 12].map((goalNumber) => {
               return (
                 <div
                   key={goalNumber}
