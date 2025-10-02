@@ -1,11 +1,11 @@
 "use client";
 
+import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import {
   Card,
-  CardContent,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/src/components/ui/card";
 import { useInView } from "@/src/hooks/use-in-view";
 import { Code, ExternalLink, Lightbulb, Users } from "lucide-react";
@@ -13,6 +13,7 @@ import { useTranslations } from "next-intl";
 
 export function BetaConsultingSection() {
   const t = useTranslations("beta");
+  const tSdg = useTranslations("sdg");
   const { ref: sectionRef, isInView } = useInView<HTMLElement>({
     threshold: 0.1,
   });
@@ -194,6 +195,45 @@ export function BetaConsultingSection() {
               </Card>
             );
           })}
+        </div>
+
+        {/* SDG Section */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <Badge
+              variant="secondary"
+              className="mb-4 bg-blue-50 text-blue-600 border-blue-200"
+            >
+              {tSdg("alignedWith")}
+            </Badge>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-4">
+              {tSdg("title")}
+            </h3>
+          </div>
+          
+          <div className="flex justify-center gap-6 sm:gap-8">
+            {[4, 8, 9].map((goalNumber) => (
+              <div
+                key={goalNumber}
+                className="group relative"
+              >
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 cursor-pointer">
+                  <img
+                    src={`/odd/F-WEB-Goal-${goalNumber.toString().padStart(2, '0')}.png`}
+                    alt={`ODD ${goalNumber}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                  <div className="font-medium">ODD {goalNumber}</div>
+                  <div className="text-xs">{tSdg(`goals.${goalNumber}`)}</div>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-900"></div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Section with animation */}

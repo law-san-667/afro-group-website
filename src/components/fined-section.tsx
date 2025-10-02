@@ -16,6 +16,7 @@ import { useState } from "react";
 
 export function FinEdSection() {
   const t = useTranslations("fined");
+  const tSdg = useTranslations("sdg");
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
     "monthly"
   );
@@ -265,6 +266,48 @@ export function FinEdSection() {
                 isPhoneInView ? "opacity-100 scale-100" : "opacity-0 scale-0"
               }`}
             />
+          </div>
+        </div>
+
+        {/* SDG Section */}
+        <div className="mt-16 sm:mt-20 mb-16 sm:mb-20">
+          <div className="text-center mb-8">
+            <Badge
+              variant="secondary"
+              className="mb-4 bg-blue-50 text-blue-600 border-blue-200"
+            >
+              {tSdg("alignedWith")}
+            </Badge>
+            <h3 className="text-lg sm:text-xl font-semibold text-muted-foreground mb-4">
+              {tSdg("title")}
+            </h3>
+          </div>
+          
+          <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-17 gap-2 sm:gap-3 lg:gap-4 max-w-6xl mx-auto justify-items-center">
+            {Array.from({ length: 17 }, (_, index) => {
+              const goalNumber = index + 1;
+              return (
+                <div
+                  key={goalNumber}
+                  className="group relative"
+                >
+                  <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 cursor-pointer">
+                    <img
+                      src={`/odd/F-WEB-Goal-${goalNumber.toString().padStart(2, '0')}.png`}
+                      alt={`ODD ${goalNumber}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Tooltip */}
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                    <div className="font-medium">ODD {goalNumber}</div>
+                    <div className="text-xs">{tSdg(`goals.${goalNumber}`)}</div>
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-900"></div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
