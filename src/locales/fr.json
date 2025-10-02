@@ -65,105 +65,122 @@
       "mostPopular": "Le Plus Populaire",
       "getStarted": "Commencer",
       "askAQuote": "Demander un Devis",
+      "enterpriseTitle": "Solutions Entreprises & Institutions",
+      "enterpriseSubtitle": "Des solutions sur mesure pour vos besoins spécifiques",
       "packs": {
-        "free": {
-          "name": "Pack Gratuit",
+        "starter": {
+          "name": "Pack Starter",
+          "subtitle": "Gratuit",
           "target": "Grand public, nouveaux utilisateurs",
-          "objective": "Attirer, rassurer et donner le goût",
+          "objective": "Découvrez la finance autrement, sans engagement.",
+          "tagline": "Idéal pour débuter son parcours financier.",
           "price": {
-            "monthly": "Disponible dès maintenant sur l'app ",
-            "yearly": "Disponible dès maintenant sur l'app "
+            "monthly": "Gratuit",
+            "yearly": "Gratuit"
           },
           "features": [
-            "vidéos gratuites",
-            "Suivi budgétaire de base",
-            "Accès aux défis publics",
-            "Assistance IA limitée"
+            "Accès à une sélection de vidéos éducatives",
+            "Suivi basique des dépenses",
+            "Accès limité au forum communautaire et à l'assistant virtuel",
+            "Accès aux actualités financières"
           ]
         },
-        "student": {
-          "name": "Pack Étudiant",
-          "target": "Étudiants, universités",
-          "objective": "Accompagner les jeunes dans la gestion financière",
+        "xamxam": {
+          "name": "Pack XamXam",
+          "subtitle": "1 500 FCFA/mois ou 12 000 FCFA/an",
+          "target": "Grand public",
+          "objective": "Apprenez la finance pas à pas et devenez autonome.",
+          "tagline": "Le compagnon parfait pour gérer son argent au quotidien.",
           "price": {
             "monthly": {
-              "cfa": "2 000 CFA",
-              "usd": "3,50 USD"
+              "cfa": "1 500 FCFA",
+              "usd": "2,69 USD"
             },
             "yearly": {
-              "cfa": "17 000 CFA",
-              "usd": "28 USD"
+              "cfa": "12 000 FCFA",
+              "usd": "21,52 USD"
             }
           },
           "features": [
-            "Mini-cours financiers",
-            "Simulateur de budget campus",
-            "Défis d'épargne",
-            "Coaching financement études"
+            "Accès illimité à toutes les vidéos éducatives",
+            "Chatbot Bassirou AI : votre conseiller virtuel",
+            "Suivi détaillé des dépenses + rapports mensuels",
+            "Simulateur d'investissement en bourse",
+            "Accès aux actualités financières personnalisées",
+            "Mis à jour du contenu chaque mois (abonnement annuel)"
           ]
         },
         "entrepreneur": {
           "name": "Pack Entrepreneur",
-          "target": "Jeunes entrepreneurs, PME",
-          "objective": "Aider les jeunes entrepreneurs à structurer leurs finances",
+          "subtitle": "3 000 FCFA/mois ou 25 000 FCFA/an",
+          "target": "PME, freelances et créateurs d'opportunités",
+          "objective": "Boostez vos finances et vos projets.",
+          "tagline": "Pensé pour les PME, freelances et créateurs d'opportunités.",
           "price": {
             "monthly": {
-              "cfa": "3 000 CFA",
-              "usd": "5,00 USD"
+              "cfa": "3 000 FCFA",
+              "usd": "5,38 USD"
             },
             "yearly": {
-              "cfa": "25 000 CFA",
-              "usd": "42 USD"
+              "cfa": "25 000 FCFA",
+              "usd": "44,84 USD"
             }
           },
           "features": [
-            "Modules de financement",
-            "Simulateur de business plan",
-            "Suivi de trésorerie",
-            "Réseau mentors & investisseurs"
+            "Formation en gestion financière adaptée à vos réalités et au contexte africain",
+            "Simulateur de crédit",
+            "Autres Outils de planification budgétaire",
+            "Bootcamp et Webinaire de haut niveau",
+            "Groupes exclusifs pour entrepreneurs et networking"
           ]
         },
-        "premium": {
-          "name": "Pack XamXam",
-          "target": "Grand public",
-          "objective": "Accès complet à l'éducation financière pour tous",
+        "student": {
+          "name": "Pack Étudiant",
+          "subtitle": "Sur devis",
+          "target": "Écoles, universités et établissements d'enseignement supérieur",
+          "objective": "Formez la nouvelle génération et les leaders de demain.",
+          "tagline": "Une solution clé en main pour universités & grandes écoles.",
           "price": {
-            "monthly": {
-              "cfa": "1 500 CFA",
-              "usd": "≈ 2,50 USD"
-            },
-            "yearly": {
-              "cfa": "12 000 CFA",
-              "usd": "≈ 20 USD"
-            }
+            "quote": "Sur devis"
           },
           "features": [
-            "Accès complet aux vidéos",
-            "Suivi budgétaire avancé",
-            "Rapports mensuels",
-            "IA illimitée",
-            "Défis et badges",
-            "Rapports détaillés",
-            "Webinaires",
-            "Mini-cours",
-            "Offres partenaires"
+            "Accès aux outils et contenus ludiques de FinEd",
+            "Modules adaptés aux cursus académiques et à la vie estudiantine",
+            "Masterclass et sessions de formation hybride",
+            "Opportunités de Certifications",
+            "Suivi des progrès par établissement"
           ]
         },
-        "b2g": {
+        "inclusion": {
           "name": "Pack Inclusion Financière",
-          "target": "Ministères éducation/finances, écoles et universités",
-          "objective": "Vous êtes une entreprise/ONG qui veut soutenir les programmes nationaux d'éducation financière ou ajouter l'éducation financière à votre offre RSE ?",
+          "subtitle": "Sur devis",
+          "target": "Associations, ONG, Institutions ou Entreprises",
+          "objective": "Investissez dans l'avenir, responsabilisez les communautés.",
+          "tagline": "Un partenariat pour changer des vies et renforcer votre image.",
           "price": {
-            "yearly": {
-              "cfa": "10 - 50 millions CFA",
-              "usd": "17 000 - 85 000 USD"
-            }
+            "quote": "Sur devis"
           },
           "features": [
-            "Modules éducatifs",
-            "Formation des formateurs",
-            "Accès gratuit via codes sponsorisés",
-            "Suivi d'impact"
+            "Accès offert aux jeunes, aux femmes et populations défavorisés",
+            "Modules éducatifs dédiés à l'éducation financière et la finance durable",
+            "Rapports d'impact et valorisation de votre action RSE"
+          ]
+        },
+        "legacy": {
+          "name": "Pack Legacy",
+          "subtitle": "Sur devis",
+          "target": "Banques et institutions à caractère bancaire",
+          "objective": "Offrez plus que des services financiers ou bancaire : éduquez et fidélisez vos clients.",
+          "tagline": "Une solution innovante pour renforcer la confiance client et créer de la valeur différenciante.",
+          "price": {
+            "quote": "Sur devis"
+          },
+          "features": [
+            "Accès à des modules FinEd personnalisés (gestion d'épargne, crédit responsable, finance durable)",
+            "Branding de la banque intégré dans l'app et les contenus",
+            "Rapports d'usage et d'impact par segment de clientèle",
+            "Sensibilisation contre le surendettement et la fraude",
+            "Promotion de vos services et produits bancaires"
           ]
         }
       }

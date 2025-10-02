@@ -24,12 +24,12 @@ export function PartnersSection() {
       description: "Organisation internationale de jeunesse",
       website: "https://aiesec.org/"
     },
-    // {
-    //   name: "CESAG",
-    //   logo: "/partners/cesag.png",
-    //   description: "Centre d'Études Supérieures de l'Afrique de Gestion",
-    //   website: "https://www.cesag.sn"
-    // },
+    {
+      name: "CESAG",
+      logo: "/partners/cesag.png",
+      description: "Centre d'Études Supérieures de l'Afrique de Gestion",
+      website: "https://www.cesag.sn"
+    },
     // {
     //   name: "CGF Bourse",
     //   logo: "/partners/cgf-bourse.png",

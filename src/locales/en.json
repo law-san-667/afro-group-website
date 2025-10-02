@@ -65,105 +65,122 @@
       "mostPopular": "Most Popular",
       "getStarted": "Get Started",
       "askAQuote": "Ask for a Quote",
+      "enterpriseTitle": "Enterprise & Institutional Solutions",
+      "enterpriseSubtitle": "Tailored solutions for your specific needs",
       "packs": {
-        "free": {
-          "name": "Free Pack",
+        "starter": {
+          "name": "Starter Pack",
+          "subtitle": "Free",
           "target": "General public, new users",
-          "objective": "Attract, reassure and give a taste",
+          "objective": "Discover finance differently, without commitment.",
+          "tagline": "Perfect for starting your financial journey.",
           "price": {
-            "monthly": "Available right now on the app ",
-            "yearly": "Available right now on the app "
+            "monthly": "Free",
+            "yearly": "Free"
           },
           "features": [
-            "free videos",
-            "Basic budget tracking",
-            "Access to public challenges",
-            "Limited AI assistance"
+            "Access to a selection of educational videos",
+            "Basic expense tracking",
+            "Limited access to community forum and virtual assistant",
+            "Access to financial news"
           ]
         },
-        "student": {
-          "name": "Student Pack",
-          "target": "Students, universities",
-          "objective": "Support young people in financial management",
+        "xamxam": {
+          "name": "XamXam Pack",
+          "subtitle": "1,500 FCFA/month or 12,000 FCFA/year",
+          "target": "General public",
+          "objective": "Learn finance step by step and become autonomous.",
+          "tagline": "The perfect companion for managing your money daily.",
           "price": {
             "monthly": {
-              "cfa": "2,000 CFA",
-              "usd": "$3.50 USD"
+              "cfa": "1,500 FCFA",
+              "usd": "$2.69 USD"
             },
             "yearly": {
-              "cfa": "17,000 CFA",
-              "usd": "$28 USD"
+              "cfa": "12,000 FCFA",
+              "usd": "$21.52 USD"
             }
           },
           "features": [
-            "Financial mini-courses",
-            "Campus budget simulator",
-            "Savings challenges",
-            "Study financing coaching"
+            "Unlimited access to all educational videos",
+            "Bassirou AI Chatbot: your virtual advisor",
+            "Detailed expense tracking + monthly reports",
+            "Stock investment simulator",
+            "Access to personalized financial news",
+            "Monthly content updates (annual subscription)"
           ]
         },
         "entrepreneur": {
           "name": "Entrepreneur Pack",
-          "target": "Young entrepreneurs, SMEs",
-          "objective": "Help young entrepreneurs structure their finances",
+          "subtitle": "3,000 FCFA/month or 25,000 FCFA/year",
+          "target": "SMEs, freelancers and opportunity creators",
+          "objective": "Boost your finances and projects.",
+          "tagline": "Designed for SMEs, freelancers and opportunity creators.",
           "price": {
             "monthly": {
-              "cfa": "3,000 CFA",
-              "usd": "$5.00 USD"
+              "cfa": "3,000 FCFA",
+              "usd": "$5.38 USD"
             },
             "yearly": {
-              "cfa": "25,000 CFA",
-              "usd": "$42 USD"
+              "cfa": "25,000 FCFA",
+              "usd": "$44.84 USD"
             }
           },
           "features": [
-            "Financing modules",
-            "Business plan simulator",
-            "Cash flow tracking",
-            "Mentors & investors network"
+            "Financial management training adapted to your realities and African context",
+            "Credit simulator",
+            "Other budget planning tools",
+            "High-level bootcamps and webinars",
+            "Exclusive groups for entrepreneurs and networking"
           ]
         },
-        "premium": {
-          "name": "XamXam Pack",
-          "target": "General public",
-          "objective": "Complete access to financial education for everyone",
+        "student": {
+          "name": "Student Pack",
+          "subtitle": "Custom quote",
+          "target": "Schools, universities and higher education institutions",
+          "objective": "Train the new generation and tomorrow's leaders.",
+          "tagline": "A turnkey solution for universities & business schools.",
           "price": {
-            "monthly": {
-              "cfa": "1,500 CFA",
-              "usd": "≈ $2.50 USD"
-            },
-            "yearly": {
-              "cfa": "12,000 CFA",
-              "usd": "≈ $20 USD"
-            }
+            "quote": "Custom quote"
           },
           "features": [
-            "Full access to videos",
-            "Advanced budget tracking",
-            "Monthly reports",
-            "Unlimited AI",
-            "Challenges and badges",
-            "Detailed reports",
-            "Webinars",
-            "Mini-courses",
-            "Partner offers"
+            "Access to FinEd's playful tools and content",
+            "Modules adapted to academic curricula and student life",
+            "Masterclasses and hybrid training sessions",
+            "Certification opportunities",
+            "Progress tracking by institution"
           ]
         },
-        "b2g": {
-          "name": "Pack Financial Inclusion",
-          "target": "Ministries of education/finance, schools and universities",
-          "objective": "Are you a company/NGO that wants to support national financial education programs or add financial education to your CSR offering ?",
+        "inclusion": {
+          "name": "Financial Inclusion Pack",
+          "subtitle": "Custom quote",
+          "target": "Associations, NGOs, Institutions or Companies",
+          "objective": "Invest in the future, empower communities.",
+          "tagline": "A partnership to change lives and strengthen your image.",
           "price": {
-            "yearly": {
-              "cfa": "10 - 50 million CFA",
-              "usd": "$17,000 - $85,000 USD"
-            }
+            "quote": "Custom quote"
           },
           "features": [
-            "Educational modules",
-            "Teacher training",
-            "Free access via sponsored codes",
-            "Impact tracking"
+            "Free access for youth, women and disadvantaged populations",
+            "Educational modules dedicated to financial education and sustainable finance",
+            "Impact reports and CSR action enhancement"
+          ]
+        },
+        "legacy": {
+          "name": "Legacy Pack",
+          "subtitle": "Custom quote",
+          "target": "Banks and banking institutions",
+          "objective": "Offer more than financial or banking services: educate and retain your clients.",
+          "tagline": "An innovative solution to strengthen client trust and create differentiating value.",
+          "price": {
+            "quote": "Custom quote"
+          },
+          "features": [
+            "Access to personalized FinEd modules (savings management, responsible credit, sustainable finance)",
+            "Bank branding integrated into the app and content",
+            "Usage and impact reports by customer segment",
+            "Awareness against over-indebtedness and fraud",
+            "Promotion of your banking services and products"
           ]
         }
       }

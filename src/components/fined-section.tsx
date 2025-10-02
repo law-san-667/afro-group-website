@@ -376,8 +376,8 @@ export function FinEdSection() {
           </div>
 
           {/* Pricing Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-7xl mx-auto">
-            {/* Free Pack */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-7xl mx-auto">
+            {/* Starter Pack */}
             <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
                 isPricingInView
@@ -388,13 +388,16 @@ export function FinEdSection() {
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
                   <h4 className="text-md font-bold text-foreground mb-2">
-                    {t("pricing.packs.free.name")}
+                    {t("pricing.packs.starter.name")}
                   </h4>
                   <div className="text-md sm:text-md font-bold text-primary mb-1">
-                    {t("pricing.packs.free.price.monthly")}
+                    {t("pricing.packs.starter.price.monthly")}
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {t("pricing.packs.free.objective")}
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {t("pricing.packs.starter.objective")}
+                  </p>
+                  <p className="text-xs text-muted-foreground italic">
+                    {t("pricing.packs.starter.tagline")}
                   </p>
                 </div>
 
@@ -403,7 +406,7 @@ export function FinEdSection() {
                     <li key={index} className="flex items-start space-x-3">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
-                        {t(`pricing.packs.free.features.${index}`)}
+                        {t(`pricing.packs.starter.features.${index}`)}
                       </span>
                     </li>
                   ))}
@@ -421,32 +424,24 @@ export function FinEdSection() {
               </CardContent>
             </Card>
 
-            {/* Premium Pack */}
+            {/* XamXam Pack */}
             <Card
               className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
                 isPricingInView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
               }`}
-              style={{ transitionDelay: "300ms" }}
+              style={{ transitionDelay: "100ms" }}
             >
-              {/* Most Popular Badge */}
-              {/* <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-primary text-primary-foreground px-3 py-1 flex items-center space-x-1">
-                  <Star className="h-3 w-3" />
-                  <span className="text-xs font-medium">{t("pricing.mostPopular")}</span>
-                </Badge>
-              </div> */}
-
               <CardContent className="p-6 sm:p-8 flex flex-col h-full">
                 <div className="mb-6">
                   <h4 className="text-md font-bold text-foreground mb-2">
-                    {t("pricing.packs.premium.name")}
+                    {t("pricing.packs.xamxam.name")}
                   </h4>
                   <div className="text-md sm:text-md font-bold text-primary mb-1">
                     {billingCycle === "monthly"
-                      ? t("pricing.packs.premium.price.monthly.cfa")
-                      : t("pricing.packs.premium.price.yearly.cfa")}
+                      ? t("pricing.packs.xamxam.price.monthly.cfa")
+                      : t("pricing.packs.xamxam.price.yearly.cfa")}
                     <span className="text-sm font-normal text-muted-foreground">
                       {billingCycle === "monthly"
                         ? t("pricing.monthly")
@@ -455,20 +450,23 @@ export function FinEdSection() {
                   </div>
                   <div className="text-sm text-muted-foreground mb-2">
                     {billingCycle === "monthly"
-                      ? t("pricing.packs.premium.price.monthly.usd")
-                      : t("pricing.packs.premium.price.yearly.usd")}
+                      ? t("pricing.packs.xamxam.price.monthly.usd")
+                      : t("pricing.packs.xamxam.price.yearly.usd")}
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {t("pricing.packs.premium.objective")}
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {t("pricing.packs.xamxam.objective")}
+                  </p>
+                  <p className="text-xs text-muted-foreground italic">
+                    {t("pricing.packs.xamxam.tagline")}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 9 }, (_, index) => (
+                  {Array.from({ length: 6 }, (_, index) => (
                     <li key={index} className="flex items-start space-x-3">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
-                        {t(`pricing.packs.premium.features.${index}`)}
+                        {t(`pricing.packs.xamxam.features.${index}`)}
                       </span>
                     </li>
                   ))}
@@ -488,42 +486,6 @@ export function FinEdSection() {
                 </div>
               </CardContent>
             </Card>
- 
-            {/* Student Pack */}
-            {/* <Card
-              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
-                isPricingInView
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
-              style={{ transitionDelay: "100ms" }}
-            >
-              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
-                <div className="mb-6">
-                  <h4 className="text-md font-bold text-foreground mb-2">
-                    {t("pricing.packs.student.name")}
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    {t("pricing.packs.student.objective")}
-                  </p>
-                </div>
-
-                <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 4 }, (_, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        {t(`pricing.packs.student.features.${index}`)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-auto">
-                  <Button className="w-full" onClick={handleGetStarted}>{t("pricing.askAQuote")}</Button>
-                </div>
-              </CardContent>
-            </Card> */}
 
             {/* Entrepreneur Pack */}
             <Card
@@ -554,13 +516,16 @@ export function FinEdSection() {
                       ? t("pricing.packs.entrepreneur.price.monthly.usd")
                       : t("pricing.packs.entrepreneur.price.yearly.usd")}
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-2">
                     {t("pricing.packs.entrepreneur.objective")}
+                  </p>
+                  <p className="text-xs text-muted-foreground italic">
+                    {t("pricing.packs.entrepreneur.tagline")}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 4 }, (_, index) => (
+                  {Array.from({ length: 5 }, (_, index) => (
                     <li key={index} className="flex items-start space-x-3">
                       <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
@@ -584,44 +549,125 @@ export function FinEdSection() {
                 </div>
               </CardContent>
             </Card>
+          </div>
 
-            {/* B2G Education Pack */}
-            {/* <Card
-              className={`relative border-border/50 hover:border-primary/30 transition-all duration-700 flex flex-col h-full ${
-                isPricingInView
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
-              style={{ transitionDelay: "400ms" }}
-            >
-              <CardContent className="p-6 sm:p-8 flex flex-col h-full">
-                <div className="mb-6">
-                  <h4 className="text-md font-bold text-foreground mb-2">
-                    {t("pricing.packs.b2g.name")}
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    {t("pricing.packs.b2g.objective")}
-                  </p>
-                </div>
+          {/* Enterprise Packs Section */}
+          <div className="mt-16 sm:mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4">
+                {t("pricing.enterpriseTitle")}
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                {t("pricing.enterpriseSubtitle")}
+              </p>
+            </div>
 
-                <ul className="space-y-3 mb-6 flex-grow">
-                  {Array.from({ length: 4 }, (_, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        {t(`pricing.packs.b2g.features.${index}`)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              {/* Student Pack */}
+              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="mb-6">
+                    <h4 className="text-md font-bold text-foreground mb-2">
+                      {t("pricing.packs.student.name")}
+                    </h4>
+                    <div className="text-sm font-semibold text-primary mb-2">
+                      {t("pricing.packs.student.price.quote")}
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {t("pricing.packs.student.objective")}
+                    </p>
+                    <p className="text-xs text-muted-foreground italic">
+                      {t("pricing.packs.student.tagline")}
+                    </p>
+                  </div>
 
-                <div className="mt-auto">
-                  <Button className="w-full" onClick={handleGetStarted}>
+                  <ul className="space-y-2 mb-6">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-xs text-muted-foreground">
+                          {t(`pricing.packs.student.features.${index}`)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button variant="outline" className="w-full" onClick={handleGetStarted}>
                     {t("pricing.askAQuote")}
                   </Button>
-                </div>
-              </CardContent>
-            </Card> */}
+                </CardContent>
+              </Card>
+
+              {/* Inclusion Pack */}
+              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="mb-6">
+                    <h4 className="text-md font-bold text-foreground mb-2">
+                      {t("pricing.packs.inclusion.name")}
+                    </h4>
+                    <div className="text-sm font-semibold text-primary mb-2">
+                      {t("pricing.packs.inclusion.price.quote")}
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {t("pricing.packs.inclusion.objective")}
+                    </p>
+                    <p className="text-xs text-muted-foreground italic">
+                      {t("pricing.packs.inclusion.tagline")}
+                    </p>
+                  </div>
+
+                  <ul className="space-y-2 mb-6">
+                    {Array.from({ length: 3 }, (_, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-xs text-muted-foreground">
+                          {t(`pricing.packs.inclusion.features.${index}`)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button variant="outline" className="w-full" onClick={handleGetStarted}>
+                    {t("pricing.askAQuote")}
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Legacy Pack */}
+              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="mb-6">
+                    <h4 className="text-md font-bold text-foreground mb-2">
+                      {t("pricing.packs.legacy.name")}
+                    </h4>
+                    <div className="text-sm font-semibold text-primary mb-2">
+                      {t("pricing.packs.legacy.price.quote")}
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {t("pricing.packs.legacy.objective")}
+                    </p>
+                    <p className="text-xs text-muted-foreground italic">
+                      {t("pricing.packs.legacy.tagline")}
+                    </p>
+                  </div>
+
+                  <ul className="space-y-2 mb-6">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-xs text-muted-foreground">
+                          {t(`pricing.packs.legacy.features.${index}`)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button variant="outline" className="w-full" onClick={handleGetStarted}>
+                    {t("pricing.askAQuote")}
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
