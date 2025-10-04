@@ -1,67 +1,83 @@
-Pack Gratuit: 
-Objectif stratégique: Attirer, rassurer et donner un avant-goût
-Cible: Grand public, nouveaux utilisateurs
-Contenu:  
-- 3 vidéos gratuites, 
-- suivi budgétaire basique, 
-- accès challenges publics
-- assistance IA limitée 
-Tarif: Gratuit
+Pack Starter – Gratuit
 
-Pack Premium:
-Objectif stratégique: Accompagner les cadres et salariés dans leur gestion patrimoniale
-Cible: Cadres, professions libérales
-Contenu:
-- Suivi complet budget et dettes, 
-- planification retraite, 
-- conseiller virtuel, 
-- rapports trimestriels, 
-- masterclass exclusives
-Tarif: 5 000 / mois ou 45 000 / an (CFA) & 8.500 / mois ou 75.000 / an (USD)
+Découvrez la finance autrement, sans engagement.
+	•	Accès à une sélection de vidéos éducatives
+	•	Suivi basique des dépenses
+	•	Accès limité au forum communautaire et à l’assistant virtuel
+     •     Accès aux actualités financières
+
+Idéal pour débuter son parcours financier.
+
+⸻
+
+Pack XamXam – 1 500 FCFA/mois ou 12 000 FCFA/an
+
+Apprenez la finance pas à pas et devenez autonome.
+	•	Accès illimité à toutes les vidéos éducatives
+	•	Chatbot Bassirou AI : votre conseiller virtuel
+	•	Suivi détaillé des dépenses + rapports mensuels
+    •      Simulateur d’investissement en bourse
+	•	Accès aux actualités financières personnalisées
+     •     Mis à jour du contenu chaque mois (abonnement annuel)
+
+Le compagnon parfait pour gérer son argent au quotidien.
+
+⸻
+
+Pack Entrepreneur – 3 000 FCFA/mois ou 25 000 FCFA/an
+
+Boostez vos finances et vos projets.
+	•	Formation en gestion financière  adaptée à vos réalités et au contexte africain
+	•	Simulateur de crédit
+	•	Autres Outils de planification budgétaire
+     •     Bootcamp et Webinaire de haut niveau
+	•	Groupes exclusifs pour entrepreneurs et networking
+
+Pensé pour les PME, freelances et créateurs d’opportunités.
+
+⸻
+
+Pack Étudiant 
+
+Vous êtes une école, université et établissement d’enseignement supérieur ?
+
+Formez la nouvelle génération et les leaders de demain.
+	•	Accès aux outils et contenus ludiques de FinEd
+	•	Modules adaptés aux cursus académiques et à la vie estudiantine
+     •     Masterclass et sessions de formation hybride
+     •     Opportunités de Certifications 
+	•	Suivi des progrès par établissement
+
+Une solution clé en main pour universités & grandes écoles.
+
+Sur devis 
+
+⸻
+
+Pack Inclusion Financière  
+
+ Vous êtes une Association, ONG, Institution ou Entreprise ?
+
+Investissez dans l’avenir, responsabilisez les communautés.
+	•	Accès  offert aux jeunes, aux femmes et populations défavorisés
+	•	Modules éducatifs dédiés à l’éducation financière et la finance durable 
+	•	Rapports d’impact et valorisation de votre action RSE
+
+Un partenariat pour changer des vies et renforcer votre image.
+
+         Sur devis 
 
 
-Pack Etudiant:
-Objectif stratégique: Accompagner les jeunes dans la gestion financière
-Cible: Étudiants, universités
-Contenu:
-- Mini-cours, 
-- simulateur budget campus, 
-- challenges épargne, 
-- coaching financement études
-Tarif: 2 000 / mois ou 17 000 / an (CFA) & 3.500 / mois ou 28.000 / an (USD)
+Pack Legacy 
 
+Vous êtes une banque, ou institution à caractère bancaire? 
+Offrez plus que des services financiers ou bancaire : éduquez et fidélisez vos clients.
+	•	Accès à des modules FinEd personnalisés (gestion d’épargne, crédit responsable, finance durable)
+	•	Branding de la banque intégré dans l’app et les contenus
+	•	Rapports d’usage et d’impact par segment de clientèle
+	•	Sensibilisation contre le surendettement et la fraude
+     •     Promotion de vos services et produits bancaires
 
-Pack Entrepreneur: 
-Objectif stratégique: Aider les jeunes entrepreneurs à structurer leurs finances
-Cible: Jeunes entrepreneurs, TPE/PME
-Contenu:
-- Modules financement, 
-- simulateur business plan, 
-- suivi cashflow, 
-- réseau mentors & investisseurs
-Tarif: 3 000 / mois ou 25 000 / an (CFA) & 5.000 / mois ou 42.000 / an (USD)
+Une solution innovante pour renforcer la confiance client et créer de la valeur différenciante.
 
-
-Pack B2G Education financière jeunes:
-Objectif stratégique: Soutenir les programmes nationaux d’éducation financière
-Cible: Ministères éducation/finances, écoles et universités
-Contenu:
-- Modules pédagogiques, 
-- formation enseignants, 
-- accès gratuit via codes sponsorisés, 
-- suivi impact
-Tarifs: 10 – 50 millions / an (CFA) & 17.000 – 85.000 / an (USD)
-
-Pack XamXam (Grand public)
-Cible: Grand public
-Contenu: 
-- Accès complet aux 15 vidéos, 
-- suivi budgétaire avancé, 
-- rapports mensuels, 
-- IA illimitée, 
-- challenges et badges
-- Tout le contenu mensuel + rapports détaillés, 
-- webinaires, 
-- mini-cours, 
-- offres partenaires 
-Tarifs: 1 500 / mois ou ≈ 2.5 / mois || 12 000 / an ou ≈ 20 / an
+Sur devis

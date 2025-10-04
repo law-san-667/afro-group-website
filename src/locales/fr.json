@@ -137,7 +137,7 @@
         "student": {
           "name": "Pack Étudiant",
           "subtitle": "Sur devis",
-          "target": "Écoles, universités et établissements d'enseignement supérieur",
+          "target": "Vous êtes une école, université et établissement d’enseignement supérieur ?",
           "objective": "Formez la nouvelle génération et les leaders de demain.",
           "tagline": "Une solution clé en main pour universités & grandes écoles.",
           "price": {
@@ -154,7 +154,7 @@
         "inclusion": {
           "name": "Pack Inclusion Financière",
           "subtitle": "Sur devis",
-          "target": "Associations, ONG, Institutions ou Entreprises",
+          "target": "Vous êtes une Association, ONG, Institution ou Entreprise ?",
           "objective": "Investissez dans l'avenir, responsabilisez les communautés.",
           "tagline": "Un partenariat pour changer des vies et renforcer votre image.",
           "price": {
@@ -169,7 +169,7 @@
         "legacy": {
           "name": "Pack Legacy",
           "subtitle": "Sur devis",
-          "target": "Banques et institutions à caractère bancaire",
+          "target": "Vous êtes une banque, ou institution à caractère bancaire ?",
           "objective": "Offrez plus que des services financiers ou bancaire : éduquez et fidélisez vos clients.",
           "tagline": "Une solution innovante pour renforcer la confiance client et créer de la valeur différenciante.",
           "price": {

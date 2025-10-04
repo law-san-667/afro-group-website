@@ -396,9 +396,9 @@ export function FinEdSection() {
                   <p className="text-sm text-muted-foreground mb-2">
                     {t("pricing.packs.starter.objective")}
                   </p>
-                  <p className="text-xs text-muted-foreground italic">
+                  {/* <p className="text-xs text-muted-foreground italic">
                     {t("pricing.packs.starter.tagline")}
-                  </p>
+                  </p> */}
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -456,9 +456,9 @@ export function FinEdSection() {
                   <p className="text-sm text-muted-foreground mb-2">
                     {t("pricing.packs.xamxam.objective")}
                   </p>
-                  <p className="text-xs text-muted-foreground italic">
+                  {/* <p className="text-xs text-muted-foreground italic">
                     {t("pricing.packs.xamxam.tagline")}
-                  </p>
+                  </p> */}
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -519,9 +519,9 @@ export function FinEdSection() {
                   <p className="text-sm text-muted-foreground mb-2">
                     {t("pricing.packs.entrepreneur.objective")}
                   </p>
-                  <p className="text-xs text-muted-foreground italic">
+                  {/* <p className="text-xs text-muted-foreground italic">
                     {t("pricing.packs.entrepreneur.tagline")}
-                  </p>
+                  </p> */}
                 </div>
 
                 <ul className="space-y-3 mb-6 flex-grow">
@@ -552,7 +552,7 @@ export function FinEdSection() {
           </div>
 
           {/* Enterprise Packs Section */}
-          <div className="mt-16 sm:mt-20">
+          <div className="mt-16 sm:mt-20 flex-col items-center justify-center ">
             <div className="text-center mb-12">
               <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4">
                 {t("pricing.enterpriseTitle")}
@@ -562,23 +562,23 @@ export function FinEdSection() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 max-w-6xl mx-auto">
               {/* Student Pack */}
-              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 w-full max-w-sm">
                 <CardContent className="p-6 sm:p-8">
                   <div className="mb-6">
                     <h4 className="text-md font-bold text-foreground mb-2">
                       {t("pricing.packs.student.name")}
                     </h4>
-                    <div className="text-sm font-semibold text-primary mb-2">
+                    {/* <div className="text-sm font-semibold text-primary mb-2">
                       {t("pricing.packs.student.price.quote")}
-                    </div>
+                    </div> */}
                     <p className="text-sm text-muted-foreground mb-2">
+                      {t("pricing.packs.student.target")}
+                    </p>
+                    {/* <p className="text-xs text-muted-foreground italic">
                       {t("pricing.packs.student.objective")}
-                    </p>
-                    <p className="text-xs text-muted-foreground italic">
-                      {t("pricing.packs.student.tagline")}
-                    </p>
+                    </p> */}
                   </div>
 
                   <ul className="space-y-2 mb-6">
@@ -599,21 +599,21 @@ export function FinEdSection() {
               </Card>
 
               {/* Inclusion Pack */}
-              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 w-full max-w-sm">
                 <CardContent className="p-6 sm:p-8">
                   <div className="mb-6">
                     <h4 className="text-md font-bold text-foreground mb-2">
                       {t("pricing.packs.inclusion.name")}
                     </h4>
-                    <div className="text-sm font-semibold text-primary mb-2">
+                    {/* <div className="text-sm font-semibold text-primary mb-2">
                       {t("pricing.packs.inclusion.price.quote")}
-                    </div>
+                    </div> */}
                     <p className="text-sm text-muted-foreground mb-2">
+                      {t("pricing.packs.inclusion.target")}
+                    </p>
+                    {/* <p className="text-xs text-muted-foreground italic">
                       {t("pricing.packs.inclusion.objective")}
-                    </p>
-                    <p className="text-xs text-muted-foreground italic">
-                      {t("pricing.packs.inclusion.tagline")}
-                    </p>
+                    </p> */}
                   </div>
 
                   <ul className="space-y-2 mb-6">
@@ -634,7 +634,7 @@ export function FinEdSection() {
               </Card>
 
               {/* Legacy Pack */}
-              <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
+              {/* <Card className="border-border/50 hover:border-primary/30 transition-all duration-300">
                 <CardContent className="p-6 sm:p-8">
                   <div className="mb-6">
                     <h4 className="text-md font-bold text-foreground mb-2">
@@ -644,10 +644,10 @@ export function FinEdSection() {
                       {t("pricing.packs.legacy.price.quote")}
                     </div>
                     <p className="text-sm text-muted-foreground mb-2">
-                      {t("pricing.packs.legacy.objective")}
+                      {t("pricing.packs.legacy.target")}
                     </p>
                     <p className="text-xs text-muted-foreground italic">
-                      {t("pricing.packs.legacy.tagline")}
+                      {t("pricing.packs.legacy.objective")}
                     </p>
                   </div>
 
@@ -666,7 +666,7 @@ export function FinEdSection() {
                     {t("pricing.askAQuote")}
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
