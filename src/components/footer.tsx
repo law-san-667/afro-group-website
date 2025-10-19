@@ -3,7 +3,7 @@
 import { Button } from "@/src/components/ui/button"
 import { Input } from "@/src/components/ui/input"
 import { Link } from "@/src/i18n/navigation"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, WhatsApp } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Whatsapp } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
 import { usePathname } from "next/navigation"
 
@@ -33,7 +33,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: WhatsApp, href: "http://wa.me/221774038237", label: "WhatsApp" },
+    { icon: Whatsapp, href: "http://wa.me/221774038237", label: "WhatsApp" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/afrogroup-services/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/fined.mobile?igsh=MWpuZW84YXRneGVhbw%3D%3D&utm_source=qr ", label: "Instagram" },
   ]
