@@ -34,6 +34,7 @@
   },
   "fined": {
     "title": "FinEd",
+    "scanQR": "Scannez le QR Code",
     "subtitle": "Éducation Financière",
     "secondsubtitle": "Métiers émergents de la finance",
     "tagline": "Le YouTube de la Finance Africaine",

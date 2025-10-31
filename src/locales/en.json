@@ -34,6 +34,7 @@
   },
   "fined": {
     "title": "FinEd",
+    "scanQR": "Scan the QR Code",
     "subtitle": "Financial Literacy",
     "secondsubtitle": "Emerging careers in finance",
     "tagline": "The YouTube of African Finance",

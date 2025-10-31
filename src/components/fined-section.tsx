@@ -162,69 +162,88 @@ export function FinEdSection() {
               <p className="text-sm font-medium text-muted-foreground">
                 {t("downloadText")}
               </p>
-              <div className="flex flex-row gap-3 sm:gap-4">
-                {/* App Store Button */}
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
-                  onClick={() =>
-                    window.open(
-                      "https://apps.apple.com/sn/app/fined-mobile/id6747647784",
-                      "_blank"
-                    )
-                  }
-                >
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center group-hover:bg-black/80 transition-colors flex-shrink-0">
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.13997 6.91 8.85997 6.88C10.15 6.86 11.38 7.75 12.1 7.75C12.81 7.75 14.28 6.68 15.84 6.84C16.48 6.87 18.02 7.11 19.05 8.57C18.96 8.63 17.15 9.74 17.17 11.94C17.19 14.58 19.68 15.59 19.7 15.6C19.67 15.69 19.31 16.96 18.71 19.5Z" />
-                      <path d="M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
-                    </svg>
-                  </div>
-                  <div className="text-left min-w-0 flex-1">
-                    <div className="text-xs text-muted-foreground">
-                      {t("downloadOn")}
+              
+              {/* Download Options Container */}
+              <div className="flex flex-col lg:flex-row gap-6 items-center">
+                {/* App Store & Google Play Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  {/* App Store Button */}
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
+                    onClick={() =>
+                      window.open(
+                        "https://apps.apple.com/sn/app/fined-mobile/id6747647784",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center group-hover:bg-black/80 transition-colors flex-shrink-0">
+                      <svg
+                        className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.13997 6.91 8.85997 6.88C10.15 6.86 11.38 7.75 12.1 7.75C12.81 7.75 14.28 6.68 15.84 6.84C16.48 6.87 18.02 7.11 19.05 8.57C18.96 8.63 17.15 9.74 17.17 11.94C17.19 14.58 19.68 15.59 19.7 15.6C19.67 15.69 19.31 16.96 18.71 19.5Z" />
+                        <path d="M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
+                      </svg>
                     </div>
-                    <div className="text-sm font-semibold text-muted-foreground">
-                      App Store
+                    <div className="text-left min-w-0 flex-1">
+                      <div className="text-xs text-muted-foreground">
+                        {t("downloadOn")}
+                      </div>
+                      <div className="text-sm font-semibold text-muted-foreground">
+                        App Store
+                      </div>
                     </div>
-                  </div>
-                </Button>
+                  </Button>
 
-                {/* Google Play Button */}
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
-                  onClick={() =>
-                    window.open(
-                      "https://play.google.com/store/apps/details?id=com.lawsan.fined",
-                      "_blank"
-                    )
-                  }
-                >
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg flex items-center justify-center group-hover:from-green-500 group-hover:to-blue-600 transition-all flex-shrink-0">
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                    </svg>
-                  </div>
-                  <div className="text-left min-w-0 flex-1">
-                    <div className="text-xs text-muted-foreground">
-                      {t("availableOn")}
+                  {/* Google Play Button */}
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="flex items-center justify-start space-x-3 px-4 sm:px-6 py-3 sm:py-4 h-auto border-2 hover:bg-muted/50 group transform hover:scale-105 transition-all duration-300"
+                    onClick={() =>
+                      window.open(
+                        "https://play.google.com/store/apps/details?id=com.lawsan.fined",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg flex items-center justify-center group-hover:from-green-500 group-hover:to-blue-600 transition-all flex-shrink-0">
+                      <svg
+                        className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                      </svg>
                     </div>
-                    <div className="text-sm font-semibold text-muted-foreground">
-                      Google Play
+                    <div className="text-left min-w-0 flex-1">
+                      <div className="text-xs text-muted-foreground">
+                        {t("availableOn")}
+                      </div>
+                      <div className="text-sm font-semibold text-muted-foreground">
+                        Google Play
+                      </div>
                     </div>
+                  </Button>
+                </div>
+
+                {/* QR Code Section */}
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="bg-white p-2 rounded-lg shadow-md border-2 border-muted hover:shadow-lg transition-all duration-300">
+                    <img
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://onelink.to/akekfv"
+                      alt="QR Code for FinEd App Download"
+                      className="w-20 h-20 sm:w-24 sm:h-24"
+                    />
                   </div>
-                </Button>
+                  <p className="text-xs text-muted-foreground text-center max-w-24">
+                    {t("scanQR")}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
