@@ -54,6 +54,7 @@ export function Footer() {
   ]
 
   return (
+    <>
     <footer style={{ backgroundColor: "#10493F" }} className=" text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -152,5 +153,16 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    {/* Floating WhatsApp Button */}
+    <a
+      href="http://wa.me/221774038237"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+      className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white rounded-full p-4 shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/70"
+    >
+      <WhatsAppIcon className="h-6 w-6" />
+    </a>
+    </>
   )
 }
