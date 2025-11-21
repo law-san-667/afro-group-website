@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "45V4RJ7XGM.com.lawsan.fined",
+                "paths": [ "/news/*", "auth/register/*"]
+            }
+        ]
+    }
+}
