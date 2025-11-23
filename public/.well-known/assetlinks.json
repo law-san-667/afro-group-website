@@ -1,0 +1,15 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.lawsan.fined",
+            "sha256_cert_fingerprints": [
+                "CD:B8:CA:84:E0:F0:81:F6:4E:53:C1:AD:29:8B:2E:38:D9:42:95:C9:B8:AB:F1:37:8B:38:89:EB:04:7D:A2:CC"
+            ]
+        }
+    }
+]
+
+
+
